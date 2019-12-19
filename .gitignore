@@ -1,0 +1,10 @@
+build/
+*.pyc
+*.ps
+*.pdf
+*nogit*
+*.cfile
+dev/
+apps/test-suites
+*.sigmf-data
+*.sigmf-meta
