@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1lora_1_1channelizer" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora::channelizer</compoundname>
+    <basecompoundref prot="public" virt="virtual">hier_block2</basecompoundref>
+    <includes refid="channelizer_8h" local="no">channelizer.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1lora_1_1channelizer_1a1321d3f93480e18bdcbe0bba0c7294f6" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1lora_1_1channelizer" kindref="compound">channelizer</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;channelizer&gt; gr::lora::channelizer::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/channelizer.h" line="39" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/channelizer.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1lora_1_1channelizer_1a2bc8e8f4a51f63fee8b11d4f067d0809" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1lora_1_1channelizer_1a1321d3f93480e18bdcbe0bba0c7294f6" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::lora::channelizer::make</definition>
+        <argsstring>(float in_samp_rate, float out_samp_rate, float center_freq, std::vector&lt; float &gt; channel_list)</argsstring>
+        <name>make</name>
+        <param>
+          <type>float</type>
+          <declname>in_samp_rate</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>out_samp_rate</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>center_freq</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; float &gt;</type>
+          <declname>channel_list</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1lora_1_1channelizer" kindref="compound">lora::channelizer</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1lora_1_1channelizer" kindref="compound">lora::channelizer</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1lora_1_1channelizer_1a2bc8e8f4a51f63fee8b11d4f067d0809" kindref="member">lora::channelizer::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/channelizer.h" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gr::hier_block2</label>
+      </node>
+      <node id="0">
+        <label>gr::lora::channelizer</label>
+        <link refid="classgr_1_1lora_1_1channelizer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>gr::hier_block2</label>
+      </node>
+      <node id="2">
+        <label>gr::lora::channelizer</label>
+        <link refid="classgr_1_1lora_1_1channelizer"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/channelizer.h" line="37" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/channelizer.h" bodystart="36" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora_1_1channelizer_1a2bc8e8f4a51f63fee8b11d4f067d0809" prot="public" virt="non-virtual"><scope>gr::lora::channelizer</scope><name>make</name></member>
+      <member refid="classgr_1_1lora_1_1channelizer_1a1321d3f93480e18bdcbe0bba0c7294f6" prot="public" virt="non-virtual"><scope>gr::lora::channelizer</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgr_1_1lora_1_1debugger_1_1header" kind="struct" language="C++" prot="private">
+    <compoundname>gr::lora::debugger::header</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgr_1_1lora_1_1debugger_1_1header_1ad0008a97c98cd2ec5416dfd7ed64e1f7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora::debugger::header::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" line="43" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1lora_1_1debugger_1_1header_1a0ac66af6fcbc868b5083d1f337716515" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora::debugger::header::draw_over</definition>
+        <argsstring></argsstring>
+        <name>draw_over</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" line="44" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" line="42" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" bodystart="42" bodyend="45"/>
+    <listofallmembers>
+      <member refid="structgr_1_1lora_1_1debugger_1_1header_1a0ac66af6fcbc868b5083d1f337716515" prot="public" virt="non-virtual"><scope>gr::lora::debugger::header</scope><name>draw_over</name></member>
+      <member refid="structgr_1_1lora_1_1debugger_1_1header_1ad0008a97c98cd2ec5416dfd7ed64e1f7" prot="public" virt="non-virtual"><scope>gr::lora::debugger::header</scope><name>length</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

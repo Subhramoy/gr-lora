@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="loratap_8h" kind="file" language="C++">
+    <compoundname>loratap.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <incdepgraph>
+      <node id="77">
+        <label>stdint.h</label>
+      </node>
+      <node id="76">
+        <label>loratap.h</label>
+        <link refid="loratap_8h"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7e" prot="public" static="no">
+        <name>sf</name>
+        <enumvalue id="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7eace0573e0f4530c3749e6dbd1f465c0dc" prot="public">
+          <name>SF7</name>
+          <initializer>=7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7eacd9636e6b0a580e09fd1f40503719f7b" prot="public">
+          <name>SF8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7ead942ff07779feb519de652c0b6684414" prot="public">
+          <name>SF9</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7ea5d3fa41ffec0e56aeedd1cbdae5edc6f" prot="public">
+          <name>SF10</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7ea632f797fa2870d292d02289550188b03" prot="public">
+          <name>SF11</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7ea39aa6139e9e6aa23104f56225d667c85" prot="public">
+          <name>SF12</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h" line="33" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="loratap_8h_1aa26bfabeea57a4434055dacf00e1f6d3" prot="public" static="no">
+        <type>enum <ref refid="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7e" kindref="member">sf</ref></type>
+        <definition>typedef enum sf  sf_t</definition>
+        <argsstring></argsstring>
+        <name>sf_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h" line="33" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="loratap_8h_1a4e37d760364f97d552fea4a113579bad" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>loratap_channel_t</definition>
+        <argsstring></argsstring>
+        <name>loratap_channel_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h" line="39" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="loratap_8h_1afeb7d0d3b73356fe151f5c7cfce07665" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>loratap_rssi_t</definition>
+        <argsstring></argsstring>
+        <name>loratap_rssi_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h" line="46" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="loratap_8h_1af97d5ce50e66d6763f82234725f63d5a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>loratap_header_t</definition>
+        <argsstring></argsstring>
+        <name>loratap_header_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h" line="55" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="loratap_8h_1a81d9eaa662fd1187d2e06d375290d79a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>struct __attribute__</definition>
+        <argsstring>((__packed__)) loratap_channel</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(__packed__)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h" line="32" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h" bodystart="35" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="utilities_8h" kind="file" language="C++">
+    <compoundname>utilities.h</compoundname>
+    <includes local="no">cstdint</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">iomanip</includes>
+    <incdepgraph>
+      <node id="116">
+        <label>iomanip</label>
+      </node>
+      <node id="114">
+        <label>cstdint</label>
+      </node>
+      <node id="115">
+        <label>string.h</label>
+      </node>
+      <node id="113">
+        <label>utilities.h</label>
+        <link refid="utilities_8h"/>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1lora">gr::lora</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="utilities_8h_1aa455c886ba3ac87bd04d84c303b39a2d" prot="public" static="no">
+        <name>REV_BITS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" line="28" column="9" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utilities_8h_1ace7e1c624c907a0f2759ca432aa3faf6" prot="public" static="no">
+        <name>MAC_CRC_SIZE</name>
+        <initializer>2u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" line="29" column="9" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utilities_8h_1a9f323e90024dd5d8f0e1fbbf9c92a3a1" prot="public" static="no">
+        <name>SM</name>
+        <param><defname>value</defname></param>
+        <param><defname>shift</defname></param>
+        <param><defname>mask</defname></param>
+        <initializer>(((value) &lt;&lt; (shift)) &amp; (mask))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" line="30" column="9" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utilities_8h_1a54868972748d21b68040887495282367" prot="public" static="no">
+        <name>MS</name>
+        <param><defname>value</defname></param>
+        <param><defname>mask</defname></param>
+        <param><defname>shift</defname></param>
+        <initializer>(((value) &amp; (mask)) &gt;&gt; (shift))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" line="31" column="9" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h"/>
+  </compounddef>
+</doxygen>

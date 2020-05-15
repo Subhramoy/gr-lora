@@ -1,0 +1,1802 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1lora_1_1decoder__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora::decoder_impl</compoundname>
+    <basecompoundref refid="classgr_1_1lora_1_1decoder" prot="public" virt="non-virtual">gr::lora::decoder</basecompoundref>
+    <includes refid="decoder__impl_8h" local="no">decoder_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1aeb10cc513c84400668eaea1c5f821c49" prot="private" static="no" mutable="no">
+        <type>debugger</type>
+        <definition>debugger gr::lora::decoder_impl::d_dbg</definition>
+        <argsstring></argsstring>
+        <name>d_dbg</name>
+        <briefdescription>
+<para>Debugger for plotting samples, printing output, etc. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="69" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1ab6e99bbce161a64acb1f25e9764a41db" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1lora_1a0ecab8ddcb99ee531c385937ae075697" kindref="member">DecoderState</ref></type>
+        <definition>DecoderState gr::lora::decoder_impl::d_state</definition>
+        <argsstring></argsstring>
+        <name>d_state</name>
+        <briefdescription>
+<para>Holds the current state of the decoder (state machine). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="70" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a7a0d263e90a4c1861e1f390dd0293974" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora::decoder_impl::d_downchirp</definition>
+        <argsstring></argsstring>
+        <name>d_downchirp</name>
+        <briefdescription>
+<para>The complex ideal downchirp. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="72" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1aed96ee44691ea1d2c66c22e8a136cfef" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::lora::decoder_impl::d_downchirp_ifreq</definition>
+        <argsstring></argsstring>
+        <name>d_downchirp_ifreq</name>
+        <briefdescription>
+<para>The instantaneous frequency of the ideal downchirp. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="73" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a268f2264e922b0080236e879e000e5b5" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora::decoder_impl::d_upchirp</definition>
+        <argsstring></argsstring>
+        <name>d_upchirp</name>
+        <briefdescription>
+<para>The complex ideal upchirp. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="75" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a824a14f9d1961972bfe8705cf63b5106" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::lora::decoder_impl::d_upchirp_ifreq</definition>
+        <argsstring></argsstring>
+        <name>d_upchirp_ifreq</name>
+        <briefdescription>
+<para>The instantaneous frequency of the ideal upchirp. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="76" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a128daa39e76dbdefade04aedf0515d1b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::lora::decoder_impl::d_upchirp_ifreq_v</definition>
+        <argsstring></argsstring>
+        <name>d_upchirp_ifreq_v</name>
+        <briefdescription>
+<para>The instantaneous frequency of the ideal upchirp. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="77" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a326b74fb4b843b8c26d1c2639b2848cf" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora::decoder_impl::d_fft</definition>
+        <argsstring></argsstring>
+        <name>d_fft</name>
+        <briefdescription>
+<para>Vector containing the FFT resuls. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="79" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1aa9ec4457fda8347f92d7aff90f1828ed" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora::decoder_impl::d_mult_hf</definition>
+        <argsstring></argsstring>
+        <name>d_mult_hf</name>
+        <briefdescription>
+<para>Vector containing the FFT decimation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="80" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a06d207a4393ca6cec5c885cfc7207341" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora::decoder_impl::d_tmp</definition>
+        <argsstring></argsstring>
+        <name>d_tmp</name>
+        <briefdescription>
+<para>Vector containing the FFT decimation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="81" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a6cb98ad106ab9514a1d950bf8fed5475" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::lora::decoder_impl::d_sf</definition>
+        <argsstring></argsstring>
+        <name>d_sf</name>
+        <briefdescription>
+<para>The Spreading Factor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="83" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1ad30a7ee317aeeb503a158cd2e93ad0d1" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora::decoder_impl::d_bw</definition>
+        <argsstring></argsstring>
+        <name>d_bw</name>
+        <briefdescription>
+<para>The receiver bandwidth (fixed to <computeroutput>125kHz</computeroutput>). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="84" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1ad3aa0252860b1c9dd8e8b23baa807415" prot="private" static="no" mutable="no">
+        <type><ref refid="loraphy_8h_1a78c1041b95d475b3b028c3e6b68033c9" kindref="member">loraphy_header_t</ref></type>
+        <definition>loraphy_header_t gr::lora::decoder_impl::d_phdr</definition>
+        <argsstring></argsstring>
+        <name>d_phdr</name>
+        <briefdescription>
+<para>LoRa PHY header. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="85" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1ad01e3e74004a886cb8a405cd0fab4f39" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t gr::lora::decoder_impl::d_mac_crc</definition>
+        <argsstring></argsstring>
+        <name>d_mac_crc</name>
+        <briefdescription>
+<para>The MAC CRC. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="86" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a86eaf447bf3a5b564bac0e11abf55003" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::lora::decoder_impl::d_bits_per_second</definition>
+        <argsstring></argsstring>
+        <name>d_bits_per_second</name>
+        <briefdescription>
+<para>Indicator of how many bits are transferred each second. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="87" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1ad715babcc20a7b372a7fef212a56dbb8" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora::decoder_impl::d_delay_after_sync</definition>
+        <argsstring></argsstring>
+        <name>d_delay_after_sync</name>
+        <briefdescription>
+<para>The number of samples to skip in <computeroutput><ref refid="namespacegr_1_1lora_1a0ecab8ddcb99ee531c385937ae075697a291554596c183e837f0a6bec3767c891" kindref="member">DecoderState::PAUSE</ref></computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="88" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a6e3b2b356c55e36520a990805204233a" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora::decoder_impl::d_samples_per_second</definition>
+        <argsstring></argsstring>
+        <name>d_samples_per_second</name>
+        <briefdescription>
+<para>The number of samples taken per second by GNU Radio. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="89" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a7b57565d938c56aaf189914340ded020" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::lora::decoder_impl::d_symbols_per_second</definition>
+        <argsstring></argsstring>
+        <name>d_symbols_per_second</name>
+        <briefdescription>
+<para>Indicator of how many symbols (read: chirps) are transferred each second. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="90" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1aceab9c7d9b13defce9d92822a65a069c" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::lora::decoder_impl::d_bits_per_symbol</definition>
+        <argsstring></argsstring>
+        <name>d_bits_per_symbol</name>
+        <briefdescription>
+<para>The number of bits each of the symbols contain. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="91" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a0e90a770b6e2edca44b119700d76bd7c" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora::decoder_impl::d_samples_per_symbol</definition>
+        <argsstring></argsstring>
+        <name>d_samples_per_symbol</name>
+        <briefdescription>
+<para>The number of samples in one symbol. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="92" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a40f2ceec4b49c34bbf50b3a73ac96036" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::lora::decoder_impl::d_period</definition>
+        <argsstring></argsstring>
+        <name>d_period</name>
+        <briefdescription>
+<para>Period of the symbol. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="93" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a377dddc56cfc663feb617dd5748286ae" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora::decoder_impl::d_number_of_bins</definition>
+        <argsstring></argsstring>
+        <name>d_number_of_bins</name>
+        <briefdescription>
+<para>Indicates in how many parts or bins a symbol is decimated, i.e. the max value to decode out of one payload symbol. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="94" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a89e7eaca163c8e021ace2be73cafc956" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora::decoder_impl::d_number_of_bins_hdr</definition>
+        <argsstring></argsstring>
+        <name>d_number_of_bins_hdr</name>
+        <briefdescription>
+<para>Indicates in how many parts or bins a HDR symbol is decimated, i.e. the max value to decode out of one HDR symbol. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="95" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1af8c17596e221ae26ff2d7bdc8f9acf8c" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t gr::lora::decoder_impl::d_payload_symbols</definition>
+        <argsstring></argsstring>
+        <name>d_payload_symbols</name>
+        <briefdescription>
+<para>The number of symbols needed to decode the payload. Calculated from an indicator in the HDR. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="96" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1af6daa2249ae2d3517d65eb322753ebae" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora::decoder_impl::d_payload_length</definition>
+        <argsstring></argsstring>
+        <name>d_payload_length</name>
+        <briefdescription>
+<para>The number of words after decoding the HDR or payload. Calculated from an indicator in the HDR. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="97" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1acab3510bb6bc71a2fff78395a94d32b4" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora::decoder_impl::d_corr_fails</definition>
+        <argsstring></argsstring>
+        <name>d_corr_fails</name>
+        <briefdescription>
+<para>Indicates how many times the correlation failed. After some tries, the state will revert to <computeroutput><ref refid="namespacegr_1_1lora_1a0ecab8ddcb99ee531c385937ae075697a0af51e8371a9775bddcaee4eb4738c5f" kindref="member">DecoderState::DETECT</ref></computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="98" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a425c66a3f27f04d7aa336804a4f86da0" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::lora::decoder_impl::d_energy_threshold</definition>
+        <argsstring></argsstring>
+        <name>d_energy_threshold</name>
+        <briefdescription>
+<para>The absolute threshold to distinguish signal from noise. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="99" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1afebcdd8eafc97e62da9db8c81325dee3" prot="private" static="no" mutable="no">
+        <type>const uint8_t *</type>
+        <definition>const uint8_t* gr::lora::decoder_impl::d_whitening_sequence</definition>
+        <argsstring></argsstring>
+        <name>d_whitening_sequence</name>
+        <briefdescription>
+<para>A pointer to the whitening sequence to be used in decoding. Determined by the SF in the ctor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="100" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a8b822ae8b01544b6fdd5d1ca68835168" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; uint32_t &gt;</type>
+        <definition>std::vector&lt;uint32_t&gt; gr::lora::decoder_impl::d_words</definition>
+        <argsstring></argsstring>
+        <name>d_words</name>
+        <briefdescription>
+<para>Vector containing the demodulated words. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="102" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a671d1fb474057beac1a76b033038f713" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt;uint8_t&gt; gr::lora::decoder_impl::d_demodulated</definition>
+        <argsstring></argsstring>
+        <name>d_demodulated</name>
+        <briefdescription>
+<para>Vector containing the words after deinterleaving. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="103" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1ab5e22d82e079824ef701cad1d33cca80" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt;uint8_t&gt; gr::lora::decoder_impl::d_words_deshuffled</definition>
+        <argsstring></argsstring>
+        <name>d_words_deshuffled</name>
+        <briefdescription>
+<para>Vector containing the words after deshuffling. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="104" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a2d7ee3d3057c1272114d11e863948b62" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt;uint8_t&gt; gr::lora::decoder_impl::d_words_dewhitened</definition>
+        <argsstring></argsstring>
+        <name>d_words_dewhitened</name>
+        <briefdescription>
+<para>Vector containing the words after dewhitening. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="105" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a7d2cd97f26ce13b5c62a6be513390723" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt;uint8_t&gt; gr::lora::decoder_impl::d_decoded</definition>
+        <argsstring></argsstring>
+        <name>d_decoded</name>
+        <briefdescription>
+<para>Vector containing the words after Hamming decode or the final decoded words. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="106" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a532f12ef0a64ea3abc0f5fae608a777e" prot="private" static="no" mutable="no">
+        <type>fftplan</type>
+        <definition>fftplan gr::lora::decoder_impl::d_q</definition>
+        <argsstring></argsstring>
+        <name>d_q</name>
+        <briefdescription>
+<para>The LiquidDSP::FFT_Plan. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="111" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1ac9d2fcf0059153b3cdb190d450b05796" prot="private" static="no" mutable="no">
+        <type>fftplan</type>
+        <definition>fftplan gr::lora::decoder_impl::d_qr</definition>
+        <argsstring></argsstring>
+        <name>d_qr</name>
+        <briefdescription>
+<para>The LiquidDSP::FFT_Plan in reverse. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="112" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a9799614bcb0f1e0870b8fff6ec463843" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora::decoder_impl::d_decim_factor</definition>
+        <argsstring></argsstring>
+        <name>d_decim_factor</name>
+        <briefdescription>
+<para>The number of samples (data points) in each bin. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="114" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1ac304733cf2dad60e4e61c617bde3b309" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::lora::decoder_impl::d_cfo_estimation</definition>
+        <argsstring></argsstring>
+        <name>d_cfo_estimation</name>
+        <briefdescription>
+<para>An estimation for the current Center Frequency Offset. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="115" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a07c59e00c5f824135ba17ce78793c39a" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::lora::decoder_impl::d_dt</definition>
+        <argsstring></argsstring>
+        <name>d_dt</name>
+        <briefdescription>
+<para>Indicates how fast the frequency changes in a symbol (chirp). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="116" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1decoder__impl_1a40fd5d3939e372216583cf3ae8ee8cc4" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t gr::lora::decoder_impl::d_fine_sync</definition>
+        <argsstring></argsstring>
+        <name>d_fine_sync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="117" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1ad58e42ffd9821eaa49b6973aaf57fe1a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::lora::decoder_impl::cross_correlate_ifreq_fast</definition>
+        <argsstring>(const float *samples_ifreq, const float *ideal_chirp, const uint32_t window)</argsstring>
+        <name>cross_correlate_ifreq_fast</name>
+        <param>
+          <type>const float *</type>
+          <declname>samples_ifreq</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>ideal_chirp</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+<para>TODO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1a767b250094572744a1ed9e03af901ac3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::lora::decoder_impl::cross_correlate_fast</definition>
+        <argsstring>(const gr_complex *samples, const gr_complex *ideal_chirp, const uint32_t window)</argsstring>
+        <name>cross_correlate_fast</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>samples</declname>
+        </param>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>ideal_chirp</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+<para>TODO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1ad4bee4f658dd3bc6281688241e1e5784" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decoder_impl::fine_sync</definition>
+        <argsstring>(const gr_complex *in_samples, uint32_t bin_idx, int32_t search_space)</argsstring>
+        <name>fine_sync</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>in_samples</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>bin_idx</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>search_space</declname>
+        </param>
+        <briefdescription>
+<para>TODO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1a5afc50cdb8c8a0362ff4fe8d5ce8fe9e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::lora::decoder_impl::detect_preamble_autocorr</definition>
+        <argsstring>(const gr_complex *samples, uint32_t window)</argsstring>
+        <name>detect_preamble_autocorr</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>samples</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+<para>Schmidl-Cox autocorrelation approach for approximately detecting the preamble. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1ad9e9c2916d95ee86c7b1654416afa4de" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::lora::decoder_impl::experimental_determine_cfo</definition>
+        <argsstring>(const gr_complex *samples, uint32_t window)</argsstring>
+        <name>experimental_determine_cfo</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>samples</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+<para>TODO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1a13380fb315fefeee7bf7b02cf3a6fc6e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decoder_impl::build_ideal_chirps</definition>
+        <argsstring>(void)</argsstring>
+        <name>build_ideal_chirps</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Generate the ideal up- and downchirps. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1acb20f7d2f47f8bac739e57ed127c61c7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decoder_impl::samples_to_file</definition>
+        <argsstring>(const std::string path, const gr_complex *v, const uint32_t length, const uint32_t elem_size)</argsstring>
+        <name>samples_to_file</name>
+        <param>
+          <type>const std::string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>elem_size</declname>
+        </param>
+        <briefdescription>
+<para>Debug method to dump the given complex array to the given file in binary format. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the file to dump to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The complex array to dump. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of said array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>elem_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>sizeof</computeroutput> the data in the array. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1a6940f0fcfc066b9bfa6610bcef139e08" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decoder_impl::values_to_file</definition>
+        <argsstring>(const std::string path, const unsigned char *v, const uint32_t length, const uint32_t ppm)</argsstring>
+        <name>values_to_file</name>
+        <param>
+          <type>const std::string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>ppm</declname>
+        </param>
+        <briefdescription>
+<para>Debug method to dump the given values array to a file in textual format. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the file to dump to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The values array to dump. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of said array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ppm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PPM value of the data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="175" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1a99d672caf5e9ed94c75969c011bde609" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::lora::decoder_impl::sliding_norm_cross_correlate_upchirp</definition>
+        <argsstring>(const float *samples_ifreq, const uint32_t window, int32_t *index)</argsstring>
+        <name>sliding_norm_cross_correlate_upchirp</name>
+        <param>
+          <type>const float *</type>
+          <declname>samples_ifreq</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Correct the shift of the given symbol to match the ideal upchirp by sliding cross correlating. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samples_ifreq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The symbol to shift. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window in which the symbol can be shifted (length of given sample array). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new start index in the window for the found upchirp. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Also return the correlation coefficient. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="198" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1abb636ab50f4ee194a26492d1744c9505" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::lora::decoder_impl::detect_downchirp</definition>
+        <argsstring>(const gr_complex *samples, const uint32_t window)</argsstring>
+        <name>detect_downchirp</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>samples</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+<para>Base method to start downchirp correlation and return the correlation coefficient. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The complex array of samples to detect a downchirp in. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of said sample. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="208" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1a0abb824ba8e3a74798390bf1bb3205fc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::lora::decoder_impl::detect_upchirp</definition>
+        <argsstring>(const gr_complex *samples, const uint32_t window, int32_t *index)</argsstring>
+        <name>detect_upchirp</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>samples</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Base method to start upchirp detection by calling <computeroutput>sliding_norm_cross_correlate_upchirp</computeroutput>. <linebreak/>
+Sets up the instantaneous frequency of the given complex symbol. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The complex array of samples to detect an upchirp in. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of said sample. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index to shift with so the upchirp is correctly synced inside its window. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Also return the correlation coefficient. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="222" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1abe37fc7242abe2ba6d98eeea0e1a8cca" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::lora::decoder_impl::cross_correlate</definition>
+        <argsstring>(const gr_complex *samples_1, const gr_complex *samples_2, const uint32_t window)</argsstring>
+        <name>cross_correlate</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>samples_1</declname>
+        </param>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>samples_2</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+<para>Returns the correlation coefficient when correlating the given complex symbols in the given window. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samples_1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first complex symbol to correlate with. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>samples_2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second complex symbol to correlate with. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window in which to perform correlation. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="234" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1aa377639200a3ec316dd5ad6b1885cbca" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::lora::decoder_impl::cross_correlate_ifreq</definition>
+        <argsstring>(const float *samples_ifreq, const std::vector&lt; float &gt; &amp;ideal_chirp, const uint32_t to_idx)</argsstring>
+        <name>cross_correlate_ifreq</name>
+        <param>
+          <type>const float *</type>
+          <declname>samples_ifreq</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>ideal_chirp</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>to_idx</declname>
+        </param>
+        <briefdescription>
+<para>Returns the correlation coefficient of a real signal. See <ulink url="https://en.wikipedia.org/wiki/Cross-correlation#Normalized_cross-correlation">https://en.wikipedia.org/wiki/Cross-correlation#Normalized_cross-correlation</ulink>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samples_ifreq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The instantaneous frequency of the symbol to correlate with. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ideal_chirp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector containing the ideal chirp to correlate with. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Correlation end index. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="247" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1a0049bcad099b93184ce4bbd9e6d7d70c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora::decoder_impl::get_shift_fft</definition>
+        <argsstring>(const gr_complex *samples)</argsstring>
+        <name>get_shift_fft</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>samples</declname>
+        </param>
+        <briefdescription>
+<para>Returns the index of the bin containing the frequency change by using FFT. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The complex symbol to analyse. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="255" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1aa562a5ebe583eedacb4f5c7e71672e95" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decoder_impl::determine_cfo</definition>
+        <argsstring>(const gr_complex *samples)</argsstring>
+        <name>determine_cfo</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>samples</declname>
+        </param>
+        <briefdescription>
+<para>Determine the center frequency offset in the given symbol. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The complex symbol to analyse. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="263" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1ac00e5d3980eb6768d6aafbcf34a95298" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora::decoder_impl::max_frequency_gradient_idx</definition>
+        <argsstring>(const gr_complex *samples)</argsstring>
+        <name>max_frequency_gradient_idx</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>samples</declname>
+        </param>
+        <briefdescription>
+<para>Returns the index of the bin containing the frequency change. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The complex symbol to analyze. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="271" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1a8629040a9aca73dedd3d3542817580d4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::lora::decoder_impl::demodulate</definition>
+        <argsstring>(const gr_complex *samples, const bool is_header)</argsstring>
+        <name>demodulate</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>samples</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>is_header</declname>
+        </param>
+        <briefdescription>
+<para>Demodulate the given symbol and return true if all expected symbols have been parsed. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The complex symbol to demodulate. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_header</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the demodulated words were from the HDR. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="281" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1a20e8e43bd7565f7fbdc183e3b52df64d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decoder_impl::deinterleave</definition>
+        <argsstring>(const uint32_t ppm)</argsstring>
+        <name>deinterleave</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>ppm</declname>
+        </param>
+        <briefdescription>
+<para>Deinterleave the raw demodulated words by reversing the interleave pattern. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ppm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of words that zere interleaved. Depends on <computeroutput>SF</computeroutput>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="289" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1a006aa5b82f41507c6d1ad1440a501887" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decoder_impl::decode</definition>
+        <argsstring>(const bool is_header)</argsstring>
+        <name>decode</name>
+        <param>
+          <type>const bool</type>
+          <declname>is_header</declname>
+        </param>
+        <briefdescription>
+<para>The process of decoding the demodulated words to get the actual payload. <linebreak/>
+1. Deshuffle the words <linebreak/>
+2. Dewhiten the words <linebreak/>
+3. Hamming decoding. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_header</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the demodulated words were from the HDR. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="300" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1a7f66bf13becba95ec5d5e197051b5311" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decoder_impl::deshuffle</definition>
+        <argsstring>(const uint8_t *shuffle_pattern, const bool is_header)</argsstring>
+        <name>deshuffle</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>shuffle_pattern</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>is_header</declname>
+        </param>
+        <briefdescription>
+<para>Deshuffle the demodulated words by the given pattern. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shuffle_pattern</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The order in which the bits appear. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_header</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the demodulated words were from the HDR. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="310" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1a7843325c549ea721e63cabbba0d51698" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decoder_impl::dewhiten</definition>
+        <argsstring>(const uint8_t *prng)</argsstring>
+        <name>dewhiten</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>prng</declname>
+        </param>
+        <briefdescription>
+<para>Dewhiten the deshuffled words by XORing with the whitening sequence. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prng</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The whitening sequence to XOR with. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="318" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1a5a681ecb991974a2562bd03b2198dd7b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decoder_impl::hamming_decode</definition>
+        <argsstring>(bool is_header)</argsstring>
+        <name>hamming_decode</name>
+        <param>
+          <type>bool</type>
+          <declname>is_header</declname>
+        </param>
+        <briefdescription>
+<para>Use Hamming to decode the dewhitened words. <linebreak/>
+- CR 4 or 3: Hamming(8,4) or Hamming(7,4) with parity correction <linebreak/>
+- CR 2 or 1: Extract data only (can only find parity errors, not correct them) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_header</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoding for the header? </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="328" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1ae44a4e90e5e4a5bcb91d2c0624561bf6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decoder_impl::extract_data_only</definition>
+        <argsstring>(bool is_header)</argsstring>
+        <name>extract_data_only</name>
+        <param>
+          <type>bool</type>
+          <declname>is_header</declname>
+        </param>
+        <briefdescription>
+<para>Extract only the data in the given bytes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_header</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoding for the header? </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="336" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1a94fdf9289b0019089c7c1cb7f7fac3bf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decoder_impl::hamming_decode_soft</definition>
+        <argsstring>(bool is_header)</argsstring>
+        <name>hamming_decode_soft</name>
+        <param>
+          <type>bool</type>
+          <declname>is_header</declname>
+        </param>
+        <briefdescription>
+<para>Hamming(8,4) decoding by calling <computeroutput>hamming_decode_soft_byte</computeroutput> on each byte. <linebreak/>
+Each byte is decoded in pairs, the first one becoming the LSB nibble <linebreak/>
+and the second one the MSB nibble (if even; else just zeroes). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_header</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoding for the header? </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="346" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1a39647b7bb483c01914c330a772d9d2c6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decoder_impl::nibble_reverse</definition>
+        <argsstring>(uint8_t *out_data, const uint32_t len)</argsstring>
+        <name>nibble_reverse</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>out_data</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Reverse the nibbles for each byte in the given array. <linebreak/>
+<computeroutput>MSB LSB</computeroutput> nibbles <ndash/>&gt; <computeroutput>LSB MSB</computeroutput> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array of bytes to reverse the nibbles in. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of said array. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="357" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1ad362ee9836f4b2f79806569f87ca59dd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::lora::decoder_impl::stddev</definition>
+        <argsstring>(const float *values, const uint32_t len, const float mean)</argsstring>
+        <name>stddev</name>
+        <param>
+          <type>const float *</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>mean</declname>
+        </param>
+        <briefdescription>
+<para>Return the standard deviation for the given array. <linebreak/>
+Used for cross correlating. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array to calculate the standard deviation for. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of said array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mean</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mean (average) of the values in the array. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="370" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1ac6c8334f362f532ba9df24b0a120df6b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decoder_impl::instantaneous_phase</definition>
+        <argsstring>(const gr_complex *in_samples, float *out_iphase, const uint32_t window)</argsstring>
+        <name>instantaneous_phase</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>in_samples</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>out_iphase</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the instantaneous phase for the given complex symbol. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in_samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The complex array to calculate the instantaneous phase for. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_iphase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output <computeroutput>float</computeroutput> array containing the instantaneous phase. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of said arrays. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="382" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1afd20863da9a957184f4c81efce6fa11c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decoder_impl::instantaneous_frequency</definition>
+        <argsstring>(const gr_complex *in_samples, float *out_ifreq, const uint32_t window)</argsstring>
+        <name>instantaneous_frequency</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>in_samples</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>out_ifreq</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the instantaneous frequency for the given complex symbol. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in_samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The complex array to calculate the instantaneous frequency for. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_ifreq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output <computeroutput>float</computeroutput> array containing the instantaneous frequency. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of said arrays. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="394" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1aa3e119824fe6f0101af5c0b2f1136de5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::decoder_impl::msg_lora_frame</definition>
+        <argsstring>(void)</argsstring>
+        <name>msg_lora_frame</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>TODO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="399" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1a778b196790f6ba48495aaa3dbb98952f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::decoder_impl::decoder_impl</definition>
+        <argsstring>(float samp_rate, uint8_t sf)</argsstring>
+        <name>decoder_impl</name>
+        <param>
+          <type>float</type>
+          <declname>samp_rate</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>sf</declname>
+        </param>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samp_rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sample rate of the input signal given to <computeroutput>work</computeroutput> later. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expected spreqding factor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="410" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1a83bb675e7f199cf12a1a9b76316924e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::decoder_impl::~decoder_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~decoder_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="415" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1a896f813fd80581427c3a15f8d35dd767" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::lora::decoder_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+<para>The main method called by GNU Radio to perform tasks on the given input. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>noutput_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The requested amoutn of output items. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>input_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array with samples to process. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array to return processed samples. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the number of output items generated. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="428" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1a9a465c8ca06b6689731f27dc3461190f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::lora::decoder_impl::set_sf</definition>
+        <argsstring>(const uint8_t sf)</argsstring>
+        <name>set_sf</name>
+        <reimplements refid="classgr_1_1lora_1_1decoder_1a55d191df2ce21e9a70865a8129d65b11">set_sf</reimplements>
+        <param>
+          <type>const uint8_t</type>
+          <declname>sf</declname>
+        </param>
+        <briefdescription>
+<para>Set th current spreading factor. <linebreak/>
+**Currently not supported, restart GNU Radio with different settings instead.**. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new spreading factor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="438" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1a768bcd42c1c233d871e9e5cd53ecbe91" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::lora::decoder_impl::set_samp_rate</definition>
+        <argsstring>(const float samp_rate)</argsstring>
+        <name>set_samp_rate</name>
+        <reimplements refid="classgr_1_1lora_1_1decoder_1a6b52ad51d068e9fbae798446412c740f">set_samp_rate</reimplements>
+        <param>
+          <type>const float</type>
+          <declname>samp_rate</declname>
+        </param>
+        <briefdescription>
+<para>Set the current sample rate. <linebreak/>
+**Currently not supported, restart GNU Radio with different settings instead.**. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samp_rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new sample rate. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="447" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder__impl_1afc74acc65edb63db7222d736a1db0c83" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::lora::decoder_impl::set_abs_threshold</definition>
+        <argsstring>(const float threshold)</argsstring>
+        <name>set_abs_threshold</name>
+        <reimplements refid="classgr_1_1lora_1_1decoder_1a24fdaa29313691717ac63146e32e09d7">set_abs_threshold</reimplements>
+        <param>
+          <type>const float</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+<para>Set the absolute threshold to distinguish signal from noise. <linebreak/>
+Should be around 0.01f (default) for normal environments, <linebreak/>
+or as low as 0.001f for the very noise-resistant USRP. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new threshold value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="457" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Return the DecoderState as string for debugging purposes. </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The state to return to string. <bold>LoRa Decoder</bold> <linebreak/>
+The main class for the LoRa decoder. Contains all variables and methods necessary for succesfully decoding LoRa PHY. <linebreak/>
+Only the sample rate and spreading factor are needed. The other settings, like packet length and coding rate, are extracted from the (explicit) HDR. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="29">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="27">
+        <label>gr::lora::decoder_impl</label>
+        <link refid="classgr_1_1lora_1_1decoder__impl"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>gr::lora::decoder</label>
+        <link refid="classgr_1_1lora_1_1decoder"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="32">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="30">
+        <label>gr::lora::decoder_impl</label>
+        <link refid="classgr_1_1lora_1_1decoder__impl"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>gr::lora::decoder</label>
+        <link refid="classgr_1_1lora_1_1decoder"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" line="67" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/decoder_impl.h" bodystart="67" bodyend="458"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a13380fb315fefeee7bf7b02cf3a6fc6e" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>build_ideal_chirps</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1abe37fc7242abe2ba6d98eeea0e1a8cca" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>cross_correlate</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a767b250094572744a1ed9e03af901ac3" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>cross_correlate_fast</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1aa377639200a3ec316dd5ad6b1885cbca" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>cross_correlate_ifreq</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1ad58e42ffd9821eaa49b6973aaf57fe1a" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>cross_correlate_ifreq_fast</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a86eaf447bf3a5b564bac0e11abf55003" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_bits_per_second</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1aceab9c7d9b13defce9d92822a65a069c" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_bits_per_symbol</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1ad30a7ee317aeeb503a158cd2e93ad0d1" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_bw</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1ac304733cf2dad60e4e61c617bde3b309" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_cfo_estimation</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1acab3510bb6bc71a2fff78395a94d32b4" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_corr_fails</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1aeb10cc513c84400668eaea1c5f821c49" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_dbg</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a9799614bcb0f1e0870b8fff6ec463843" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_decim_factor</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a7d2cd97f26ce13b5c62a6be513390723" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_decoded</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1ad715babcc20a7b372a7fef212a56dbb8" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_delay_after_sync</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a671d1fb474057beac1a76b033038f713" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_demodulated</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a7a0d263e90a4c1861e1f390dd0293974" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_downchirp</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1aed96ee44691ea1d2c66c22e8a136cfef" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_downchirp_ifreq</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a07c59e00c5f824135ba17ce78793c39a" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_dt</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a425c66a3f27f04d7aa336804a4f86da0" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_energy_threshold</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a326b74fb4b843b8c26d1c2639b2848cf" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_fft</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a40fd5d3939e372216583cf3ae8ee8cc4" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_fine_sync</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1ad01e3e74004a886cb8a405cd0fab4f39" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_mac_crc</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1aa9ec4457fda8347f92d7aff90f1828ed" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_mult_hf</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a377dddc56cfc663feb617dd5748286ae" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_number_of_bins</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a89e7eaca163c8e021ace2be73cafc956" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_number_of_bins_hdr</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1af6daa2249ae2d3517d65eb322753ebae" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_payload_length</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1af8c17596e221ae26ff2d7bdc8f9acf8c" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_payload_symbols</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a40f2ceec4b49c34bbf50b3a73ac96036" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_period</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1ad3aa0252860b1c9dd8e8b23baa807415" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_phdr</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a532f12ef0a64ea3abc0f5fae608a777e" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_q</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1ac9d2fcf0059153b3cdb190d450b05796" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_qr</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a6e3b2b356c55e36520a990805204233a" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_samples_per_second</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a0e90a770b6e2edca44b119700d76bd7c" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_samples_per_symbol</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a6cb98ad106ab9514a1d950bf8fed5475" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_sf</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1ab6e99bbce161a64acb1f25e9764a41db" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_state</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a7b57565d938c56aaf189914340ded020" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_symbols_per_second</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a06d207a4393ca6cec5c885cfc7207341" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_tmp</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a268f2264e922b0080236e879e000e5b5" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_upchirp</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a824a14f9d1961972bfe8705cf63b5106" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_upchirp_ifreq</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a128daa39e76dbdefade04aedf0515d1b" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_upchirp_ifreq_v</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1afebcdd8eafc97e62da9db8c81325dee3" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_whitening_sequence</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a8b822ae8b01544b6fdd5d1ca68835168" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_words</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1ab5e22d82e079824ef701cad1d33cca80" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_words_deshuffled</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a2d7ee3d3057c1272114d11e863948b62" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>d_words_dewhitened</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a006aa5b82f41507c6d1ad1440a501887" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>decode</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a778b196790f6ba48495aaa3dbb98952f" prot="public" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>decoder_impl</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a20e8e43bd7565f7fbdc183e3b52df64d" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>deinterleave</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a8629040a9aca73dedd3d3542817580d4" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>demodulate</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a7f66bf13becba95ec5d5e197051b5311" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>deshuffle</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1abb636ab50f4ee194a26492d1744c9505" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>detect_downchirp</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a5afc50cdb8c8a0362ff4fe8d5ce8fe9e" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>detect_preamble_autocorr</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a0abb824ba8e3a74798390bf1bb3205fc" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>detect_upchirp</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1aa562a5ebe583eedacb4f5c7e71672e95" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>determine_cfo</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a7843325c549ea721e63cabbba0d51698" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>dewhiten</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1ad9e9c2916d95ee86c7b1654416afa4de" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>experimental_determine_cfo</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1ae44a4e90e5e4a5bcb91d2c0624561bf6" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>extract_data_only</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1ad4bee4f658dd3bc6281688241e1e5784" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>fine_sync</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a0049bcad099b93184ce4bbd9e6d7d70c" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>get_shift_fft</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a5a681ecb991974a2562bd03b2198dd7b" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>hamming_decode</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a94fdf9289b0019089c7c1cb7f7fac3bf" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>hamming_decode_soft</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1afd20863da9a957184f4c81efce6fa11c" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>instantaneous_frequency</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1ac6c8334f362f532ba9df24b0a120df6b" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>instantaneous_phase</name></member>
+      <member refid="classgr_1_1lora_1_1decoder_1a9d76e49d4ea7210b8ec353568f55f454" prot="public" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1ac00e5d3980eb6768d6aafbcf34a95298" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>max_frequency_gradient_idx</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1aa3e119824fe6f0101af5c0b2f1136de5" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>msg_lora_frame</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a39647b7bb483c01914c330a772d9d2c6" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>nibble_reverse</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1acb20f7d2f47f8bac739e57ed127c61c7" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>samples_to_file</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1afc74acc65edb63db7222d736a1db0c83" prot="public" virt="virtual"><scope>gr::lora::decoder_impl</scope><name>set_abs_threshold</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a768bcd42c1c233d871e9e5cd53ecbe91" prot="public" virt="virtual"><scope>gr::lora::decoder_impl</scope><name>set_samp_rate</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a9a465c8ca06b6689731f27dc3461190f" prot="public" virt="virtual"><scope>gr::lora::decoder_impl</scope><name>set_sf</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a99d672caf5e9ed94c75969c011bde609" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>sliding_norm_cross_correlate_upchirp</name></member>
+      <member refid="classgr_1_1lora_1_1decoder_1aa8f498f2dcf944b69e494c2a464d2332" prot="public" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1ad362ee9836f4b2f79806569f87ca59dd" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>stddev</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a6940f0fcfc066b9bfa6610bcef139e08" prot="private" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>values_to_file</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a896f813fd80581427c3a15f8d35dd767" prot="public" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1lora_1_1decoder__impl_1a83bb675e7f199cf12a1a9b76316924e0" prot="public" virt="non-virtual"><scope>gr::lora::decoder_impl</scope><name>~decoder_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

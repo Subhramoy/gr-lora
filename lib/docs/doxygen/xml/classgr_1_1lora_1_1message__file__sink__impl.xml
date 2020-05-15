@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1lora_1_1message__file__sink__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora::message_file_sink_impl</compoundname>
+    <basecompoundref refid="classgr_1_1lora_1_1message__file__sink" prot="public" virt="non-virtual">gr::lora::message_file_sink</basecompoundref>
+    <includes refid="message__file__sink__impl_8h" local="no">message_file_sink_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1lora_1_1message__file__sink__impl_1aa7218350a1bbca98a21ad73aee318fe5" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream gr::lora::message_file_sink_impl::d_file</definition>
+        <argsstring></argsstring>
+        <name>d_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/message_file_sink_impl.h" line="690" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/message_file_sink_impl.h" bodystart="690" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1lora_1_1message__file__sink__impl_1aaf329b3b05c23fed9bfd4bdc6aa20a7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::message_file_sink_impl::message_file_sink_impl</definition>
+        <argsstring>(const std::string path)</argsstring>
+        <name>message_file_sink_impl</name>
+        <param>
+          <type>const std::string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/message_file_sink_impl.h" line="693" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1message__file__sink__impl_1a5d1409d040601e921839b1adb669219d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::message_file_sink_impl::~message_file_sink_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~message_file_sink_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/message_file_sink_impl.h" line="694" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1message__file__sink__impl_1a0f54e3a5624927b02ad4da8bf60ee76e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::message_file_sink_impl::msg_handler</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>msg_handler</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/message_file_sink_impl.h" line="696" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="38">
+        <label>gr::lora::message_file_sink_impl</label>
+        <link refid="classgr_1_1lora_1_1message__file__sink__impl"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>block</label>
+      </node>
+      <node id="39">
+        <label>gr::lora::message_file_sink</label>
+        <link refid="classgr_1_1lora_1_1message__file__sink"/>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="41">
+        <label>gr::lora::message_file_sink_impl</label>
+        <link refid="classgr_1_1lora_1_1message__file__sink__impl"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>block</label>
+      </node>
+      <node id="42">
+        <label>gr::lora::message_file_sink</label>
+        <link refid="classgr_1_1lora_1_1message__file__sink"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/message_file_sink_impl.h" line="688" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/message_file_sink_impl.h" bodystart="688" bodyend="697"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora_1_1message__file__sink__impl_1aa7218350a1bbca98a21ad73aee318fe5" prot="private" virt="non-virtual"><scope>gr::lora::message_file_sink_impl</scope><name>d_file</name></member>
+      <member refid="classgr_1_1lora_1_1message__file__sink_1a08f5f58684c9a9854b88400c8303ded2" prot="public" virt="non-virtual"><scope>gr::lora::message_file_sink_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1lora_1_1message__file__sink__impl_1aaf329b3b05c23fed9bfd4bdc6aa20a7a" prot="public" virt="non-virtual"><scope>gr::lora::message_file_sink_impl</scope><name>message_file_sink_impl</name></member>
+      <member refid="classgr_1_1lora_1_1message__file__sink__impl_1a0f54e3a5624927b02ad4da8bf60ee76e" prot="public" virt="non-virtual"><scope>gr::lora::message_file_sink_impl</scope><name>msg_handler</name></member>
+      <member refid="classgr_1_1lora_1_1message__file__sink_1a59df75b40bf29e86b69d81e5c51d3e8e" prot="public" virt="non-virtual"><scope>gr::lora::message_file_sink_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1lora_1_1message__file__sink__impl_1a5d1409d040601e921839b1adb669219d" prot="public" virt="non-virtual"><scope>gr::lora::message_file_sink_impl</scope><name>~message_file_sink_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

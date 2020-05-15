@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="message__socket__sink_8h" kind="file" language="C++">
+    <compoundname>message_socket_sink.h</compoundname>
+    <includes refid="api_8h" local="no">lora/api.h</includes>
+    <includes local="no">gnuradio/block.h</includes>
+    <includedby refid="message__socket__sink__impl_8h" local="no">message_socket_sink_impl.h</includedby>
+    <incdepgraph>
+      <node id="98">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="99">
+        <label>gnuradio/block.h</label>
+      </node>
+      <node id="97">
+        <label>lora/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>message_socket_sink.h</label>
+        <link refid="message__socket__sink_8h"/>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="100">
+        <label>message_socket_sink.h</label>
+        <link refid="message__socket__sink_8h"/>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>message_socket_sink_impl.h</label>
+        <link refid="message__socket__sink__impl_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1lora_1_1message__socket__sink" prot="public">gr::lora::message_socket_sink</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1lora">gr::lora</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/message_socket_sink.h"/>
+  </compounddef>
+</doxygen>

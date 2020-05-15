@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1lora_1_1decoder" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gr::lora::decoder</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1lora_1_1decoder__impl" prot="public" virt="non-virtual">gr::lora::decoder_impl</derivedcompoundref>
+    <includes refid="decoder_8h" local="no">decoder.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1lora_1_1decoder_1aa8f498f2dcf944b69e494c2a464d2332" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1lora_1_1decoder" kindref="compound">decoder</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;decoder&gt; gr::lora::decoder::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/decoder.h" line="695" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/decoder.h" bodystart="695" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder_1a9d76e49d4ea7210b8ec353568f55f454" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1lora_1_1decoder_1aa8f498f2dcf944b69e494c2a464d2332" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::lora::decoder::make</definition>
+        <argsstring>(float samp_rate, int sf)</argsstring>
+        <name>make</name>
+        <param>
+          <type>float</type>
+          <declname>samp_rate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sf</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1lora_1_1decoder" kindref="compound">lora::decoder</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1lora_1_1decoder" kindref="compound">lora::decoder</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1lora_1_1decoder_1a9d76e49d4ea7210b8ec353568f55f454" kindref="member">lora::decoder::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/decoder.h" line="705" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder_1a55d191df2ce21e9a70865a8129d65b11" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::lora::decoder::set_sf</definition>
+        <argsstring>(uint8_t sf)=0</argsstring>
+        <name>set_sf</name>
+        <reimplementedby refid="classgr_1_1lora_1_1decoder__impl_1a9a465c8ca06b6689731f27dc3461190f">set_sf</reimplementedby>
+        <param>
+          <type>uint8_t</type>
+          <declname>sf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/decoder.h" line="707" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder_1a6b52ad51d068e9fbae798446412c740f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::lora::decoder::set_samp_rate</definition>
+        <argsstring>(float samp_rate)=0</argsstring>
+        <name>set_samp_rate</name>
+        <reimplementedby refid="classgr_1_1lora_1_1decoder__impl_1a768bcd42c1c233d871e9e5cd53ecbe91">set_samp_rate</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>samp_rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/decoder.h" line="708" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1decoder_1a24fdaa29313691717ac63146e32e09d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::lora::decoder::set_abs_threshold</definition>
+        <argsstring>(float threshold)=0</argsstring>
+        <name>set_abs_threshold</name>
+        <reimplementedby refid="classgr_1_1lora_1_1decoder__impl_1afc74acc65edb63db7222d736a1db0c83">set_abs_threshold</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/decoder.h" line="709" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="23">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="24">
+        <label>gr::lora::decoder_impl</label>
+        <link refid="classgr_1_1lora_1_1decoder__impl"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>gr::lora::decoder</label>
+        <link refid="classgr_1_1lora_1_1decoder"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="26">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="25">
+        <label>gr::lora::decoder</label>
+        <link refid="classgr_1_1lora_1_1decoder"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/decoder.h" line="693" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/decoder.h" bodystart="693" bodyend="710"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora_1_1decoder_1a9d76e49d4ea7210b8ec353568f55f454" prot="public" virt="non-virtual"><scope>gr::lora::decoder</scope><name>make</name></member>
+      <member refid="classgr_1_1lora_1_1decoder_1a24fdaa29313691717ac63146e32e09d7" prot="public" virt="pure-virtual"><scope>gr::lora::decoder</scope><name>set_abs_threshold</name></member>
+      <member refid="classgr_1_1lora_1_1decoder_1a6b52ad51d068e9fbae798446412c740f" prot="public" virt="pure-virtual"><scope>gr::lora::decoder</scope><name>set_samp_rate</name></member>
+      <member refid="classgr_1_1lora_1_1decoder_1a55d191df2ce21e9a70865a8129d65b11" prot="public" virt="pure-virtual"><scope>gr::lora::decoder</scope><name>set_sf</name></member>
+      <member refid="classgr_1_1lora_1_1decoder_1aa8f498f2dcf944b69e494c2a464d2332" prot="public" virt="non-virtual"><scope>gr::lora::decoder</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

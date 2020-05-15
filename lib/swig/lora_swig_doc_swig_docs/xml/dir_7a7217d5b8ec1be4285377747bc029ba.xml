@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_7a7217d5b8ec1be4285377747bc029ba" kind="dir">
+    <compoundname>/home/dell/Downloads/gr-lora-0.6.2/include/lora</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="channelizer_8h">channelizer.h</innerfile>
+    <innerfile refid="controller_8h">controller.h</innerfile>
+    <innerfile refid="debugger_8h">debugger.h</innerfile>
+    <innerfile refid="decoder_8h">decoder.h</innerfile>
+    <innerfile refid="loraphy_8h">loraphy.h</innerfile>
+    <innerfile refid="loratap_8h">loratap.h</innerfile>
+    <innerfile refid="message__file__sink_8h">message_file_sink.h</innerfile>
+    <innerfile refid="message__socket__sink_8h">message_socket_sink.h</innerfile>
+    <innerfile refid="utilities_8h">utilities.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/"/>
+  </compounddef>
+</doxygen>

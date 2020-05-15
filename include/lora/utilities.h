@@ -314,7 +314,38 @@ namespace gr {
                 out << std::endl;
 
             out << std::flush;
+
+            // for (uint32_t i = 0u; i < size; i++) {//by me
+            //     out << (int)v[i]; //by me 
+            // }//by me
+
+            // if(endline)//by me
+            //     out << std::endl;//by me
+
+            // out << std::flush;
+
+            // for (uint32_t i = 1; i < 5; i++) {//by me
+            //     out << (int)v[i]; //by me 
+            // }//by me
+
+            // if(endline)//by me
+            //     out << std::endl;//by me
+
+            // out << std::flush;
         }
+
+        template <typename T>
+        inline void dev_address(std::ostream& out, const T* v, bool endline) { //function to get DevAddress
+            for (uint32_t i = 1; i < 5; i++) {//extracting from indices 1 to 5.
+                out << " " << std::hex << std::setw(2) << std::setfill('0')<< (int)v[i]; //by me 
+            }//by me
+
+            if(endline)//by me
+                out << std::endl;//by me
+
+            out << std::flush;
+        } // in include.h
+
 
         template <typename T>
         inline void print_interleave_matrix(std::ostream& out, const std::vector<T>& v, const uint32_t sf) {

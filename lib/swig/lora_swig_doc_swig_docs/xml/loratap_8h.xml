@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="loratap_8h" kind="file" language="C++">
+    <compoundname>loratap.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <incdepgraph>
+      <node id="32">
+        <label>stdint.h</label>
+      </node>
+      <node id="31">
+        <label>/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h</label>
+        <link refid="loratap_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7e" prot="public" static="no">
+        <name>sf</name>
+        <enumvalue id="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7eace0573e0f4530c3749e6dbd1f465c0dc" prot="public">
+          <name>SF7</name>
+          <initializer>=7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7eacd9636e6b0a580e09fd1f40503719f7b" prot="public">
+          <name>SF8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7ead942ff07779feb519de652c0b6684414" prot="public">
+          <name>SF9</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7ea5d3fa41ffec0e56aeedd1cbdae5edc6f" prot="public">
+          <name>SF10</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7ea632f797fa2870d292d02289550188b03" prot="public">
+          <name>SF11</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7ea39aa6139e9e6aa23104f56225d667c85" prot="public">
+          <name>SF12</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h" line="33" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="loratap_8h_1aa26bfabeea57a4434055dacf00e1f6d3" prot="public" static="no">
+        <type>enum <ref refid="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7e" kindref="member">sf</ref></type>
+        <definition>typedef enum sf  sf_t</definition>
+        <argsstring></argsstring>
+        <name>sf_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h" line="33" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="loratap_8h_1a4e37d760364f97d552fea4a113579bad" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>loratap_channel_t</definition>
+        <argsstring></argsstring>
+        <name>loratap_channel_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h" line="39" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="loratap_8h_1afeb7d0d3b73356fe151f5c7cfce07665" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>loratap_rssi_t</definition>
+        <argsstring></argsstring>
+        <name>loratap_rssi_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h" line="46" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="loratap_8h_1af97d5ce50e66d6763f82234725f63d5a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>loratap_header_t</definition>
+        <argsstring></argsstring>
+        <name>loratap_header_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h" line="55" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="loratap_8h_1a81d9eaa662fd1187d2e06d375290d79a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>struct __attribute__</definition>
+        <argsstring>((__packed__)) loratap_channel</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(__packed__)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h" line="32" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h" bodystart="35" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>LoRaTap<sp/>Copyright<sp/>(C)<sp/>2017<sp/>Erik<sp/>de<sp/>Jong</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">LoRaTap<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment">LoRaTap<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">along<sp/>with<sp/>LoRaTap.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Values<sp/>are<sp/>big-endian</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Field<sp/>details</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lt_version<sp/><sp/><sp/><sp/><sp/><sp/>LoRaTap<sp/>header<sp/>version,<sp/>current<sp/>version<sp/>is<sp/>0.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lt_padding<sp/><sp/><sp/><sp/><sp/><sp/>Unused,<sp/>for<sp/>boundary<sp/>alignment.</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lt_length<sp/><sp/><sp/><sp/><sp/><sp/><sp/>LoRaTap<sp/>header<sp/>length,<sp/>field<sp/>used<sp/>to<sp/>allow<sp/>expansion<sp/>in<sp/>future<sp/>versions.<sp/>Each<sp/>version<sp/>can<sp/>append<sp/>header<sp/>parameters.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>So,<sp/>whilst<sp/>parsing,<sp/>these<sp/>parameters<sp/>can<sp/>be<sp/>skipped<sp/>if<sp/>not<sp/>defined<sp/>for<sp/>older<sp/>versions<sp/>by<sp/>skipping<sp/>to<sp/>the<sp/>offset<sp/>of<sp/>lt_length<sp/>starting<sp/>from<sp/>the<sp/>beginning<sp/>of<sp/>the<sp/>header.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>channel<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Channel<sp/>information</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rssi<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RSSI<sp/>information</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sync_word<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sync<sp/>word<sp/>for<sp/>received<sp/>packet,<sp/>value<sp/>0x34<sp/>is<sp/>reserved<sp/>for<sp/>LoRaWAN<sp/>packets</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7ead942ff07779feb519de652c0b6684414" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7e" kindref="member">sf</ref><sp/>{<sp/><ref refid="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7eace0573e0f4530c3749e6dbd1f465c0dc" kindref="member">SF7</ref>=7,<sp/><ref refid="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7eacd9636e6b0a580e09fd1f40503719f7b" kindref="member">SF8</ref>,<sp/><ref refid="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7ead942ff07779feb519de652c0b6684414" kindref="member">SF9</ref>,<sp/><ref refid="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7ea5d3fa41ffec0e56aeedd1cbdae5edc6f" kindref="member">SF10</ref>,<sp/><ref refid="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7ea632f797fa2870d292d02289550188b03" kindref="member">SF11</ref>,<sp/><ref refid="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7ea39aa6139e9e6aa23104f56225d667c85" kindref="member">SF12</ref><sp/>}<sp/><ref refid="loratap_8h_1aa26bfabeea57a4434055dacf00e1f6d3" kindref="member">sf_t</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="loratap_8h_1a81d9eaa662fd1187d2e06d375290d79a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="loratap_8h_1a81d9eaa662fd1187d2e06d375290d79a" kindref="member">__attribute__</ref>((__packed__))<sp/>loratap_channel<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frequency;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LoRa<sp/>frequency<sp/>(Hz)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bandwidth;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Channel<sp/>bandwidth<sp/>(KHz)<sp/>in<sp/>125<sp/>KHz<sp/>steps<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7e" kindref="member">sf</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LoRa<sp/>SF<sp/>(sf_t)<sp/>[7,<sp/>8,<sp/>9,<sp/>10,<sp/>11,<sp/>12]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="loratap_8h_1a4e37d760364f97d552fea4a113579bad" refkind="member"><highlight class="normal">}<sp/><ref refid="loratap_8h_1a4e37d760364f97d552fea4a113579bad" kindref="member">loratap_channel_t</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="loratap_8h_1a81d9eaa662fd1187d2e06d375290d79a" kindref="member">__attribute__</ref>((__packed__))<sp/>loratap_rssi<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet_rssi;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LoRa<sp/>packet<sp/>RSSI,<sp/>if<sp/>snr<sp/>&gt;=<sp/>0<sp/>then<sp/>dBm<sp/>value<sp/>is<sp/>-139<sp/>+<sp/>packet_rssi,<sp/>otherwise<sp/>dBm<sp/>value<sp/>is<sp/>-139<sp/>+<sp/>packet_rssi<sp/>*<sp/>.25<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max_rssi;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LoRa<sp/>receiver<sp/>max<sp/>RSSI<sp/>(dBm<sp/>value<sp/>is<sp/>-139<sp/>+<sp/>rssi)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_rssi;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LoRa<sp/>receiver<sp/>current<sp/>RSSI<sp/>(dBm<sp/>value<sp/>is<sp/>-139<sp/>+<sp/>rssi)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>snr;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LoRa<sp/>SNR<sp/>(dB<sp/>value<sp/>is<sp/>(snr[two&apos;s<sp/>complement])/4)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="loratap_8h_1afeb7d0d3b73356fe151f5c7cfce07665" refkind="member"><highlight class="normal">}<sp/><ref refid="loratap_8h_1afeb7d0d3b73356fe151f5c7cfce07665" kindref="member">loratap_rssi_t</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="loratap_8h_1a81d9eaa662fd1187d2e06d375290d79a" kindref="member">__attribute__</ref>((__packed__))<sp/>loratap_header<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lt_version;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LoRatap<sp/>header<sp/>version<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lt_padding;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lt_length;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LoRatap<sp/>header<sp/>length<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="loratap_8h_1a4e37d760364f97d552fea4a113579bad" kindref="member">loratap_channel_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>channel;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="loratap_8h_1afeb7d0d3b73356fe151f5c7cfce07665" kindref="member">loratap_rssi_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rssi;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sync_word;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LoRa<sp/>radio<sp/>sync<sp/>word<sp/>[0x34<sp/>=<sp/>LoRaWAN]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="loratap_8h_1af97d5ce50e66d6763f82234725f63d5a" refkind="member"><highlight class="normal">}<sp/><ref refid="loratap_8h_1af97d5ce50e66d6763f82234725f63d5a" kindref="member">loratap_header_t</ref>;</highlight></codeline>
+    </programlisting>
+    <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loratap.h"/>
+  </compounddef>
+</doxygen>

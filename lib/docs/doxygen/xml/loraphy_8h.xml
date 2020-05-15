@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="loraphy_8h" kind="file" language="C++">
+    <compoundname>loraphy.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="decoder__impl_8h" local="no">decoder_impl.h</includedby>
+    <incdepgraph>
+      <node id="73">
+        <label>stdint.h</label>
+      </node>
+      <node id="72">
+        <label>loraphy.h</label>
+        <link refid="loraphy_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="75">
+        <label>decoder_impl.h</label>
+        <link refid="decoder__impl_8h"/>
+      </node>
+      <node id="74">
+        <label>loraphy.h</label>
+        <link refid="loraphy_8h"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="loraphy_8h_1a2481efd7de867935fe8fb3fde500c4a2" prot="public" static="no">
+        <name>cr</name>
+        <enumvalue id="loraphy_8h_1a2481efd7de867935fe8fb3fde500c4a2aaa5e3d661a4342f711ccc102f6e15472" prot="public">
+          <name>CR1</name>
+          <initializer>=1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="loraphy_8h_1a2481efd7de867935fe8fb3fde500c4a2a265e7935771fd8ba6e8bd452581483c1" prot="public">
+          <name>CR2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="loraphy_8h_1a2481efd7de867935fe8fb3fde500c4a2ad64302d69d6494f64a2e77bd7f0e4fd0" prot="public">
+          <name>CR3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="loraphy_8h_1a2481efd7de867935fe8fb3fde500c4a2a3b03216dd17582992d19fe718f812107" prot="public">
+          <name>CR4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loraphy.h" line="23" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loraphy.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="loraphy_8h_1a3c21d147762a5901dcd181e3d0848b29" prot="public" static="no">
+        <type>enum <ref refid="loraphy_8h_1a2481efd7de867935fe8fb3fde500c4a2" kindref="member">cr</ref></type>
+        <definition>typedef enum cr  cr_t</definition>
+        <argsstring></argsstring>
+        <name>cr_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loraphy.h" line="23" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="loraphy_8h_1a78c1041b95d475b3b028c3e6b68033c9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>loraphy_header_t</definition>
+        <argsstring></argsstring>
+        <name>loraphy_header_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loraphy.h" line="32" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loraphy.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="loraphy_8h_1aa815b3f8937062c6d5a50438f2dc9fc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>struct __attribute__</definition>
+        <argsstring>((__packed__)) loraphy_header</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(__packed__)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loraphy.h" line="709" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loraphy.h" bodystart="25" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/loraphy.h"/>
+  </compounddef>
+</doxygen>

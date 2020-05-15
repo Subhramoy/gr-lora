@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1lora_1_1channelizer__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora::channelizer_impl</compoundname>
+    <basecompoundref refid="classgr_1_1lora_1_1channelizer" prot="public" virt="non-virtual">gr::lora::channelizer</basecompoundref>
+    <includes refid="channelizer__impl_8h" local="no">channelizer_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1lora_1_1channelizer__impl_1a271c8fd0bcb58135c4e9cf7002b12553" prot="private" static="no" mutable="no">
+        <type>gr::filter::freq_xlating_fir_filter_ccf::sptr</type>
+        <definition>gr::filter::freq_xlating_fir_filter_ccf::sptr gr::lora::channelizer_impl::d_xlating_fir_filter</definition>
+        <argsstring></argsstring>
+        <name>d_xlating_fir_filter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/channelizer_impl.h" line="35" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/channelizer_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1channelizer__impl_1a42c97422d818bce7bf7c4a5a22c217f2" prot="private" static="no" mutable="no">
+        <type>gr::filter::fractional_resampler_cc::sptr</type>
+        <definition>gr::filter::fractional_resampler_cc::sptr gr::lora::channelizer_impl::d_resampler</definition>
+        <argsstring></argsstring>
+        <name>d_resampler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/channelizer_impl.h" line="36" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/channelizer_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1channelizer__impl_1ad1153f6c5199fc53b1129aa1ef609927" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::lora::channelizer_impl::d_lpf</definition>
+        <argsstring></argsstring>
+        <name>d_lpf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/channelizer_impl.h" line="37" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/channelizer_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1channelizer__impl_1a9e51a505f436a743a4ea6a77b7c27a1a" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::lora::channelizer_impl::d_cfo</definition>
+        <argsstring></argsstring>
+        <name>d_cfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/channelizer_impl.h" line="38" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/channelizer_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1channelizer__impl_1addfa05714e692259fe95b1852fd3c18a" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora::channelizer_impl::d_freq_offset</definition>
+        <argsstring></argsstring>
+        <name>d_freq_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/channelizer_impl.h" line="39" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/channelizer_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1channelizer__impl_1a62c5ed4ccc4e0ccd257a766b99c7f655" prot="private" static="no" mutable="no">
+        <type><ref refid="classgr_1_1lora_1_1controller_1a37376885dfff3a235597a0dd3845cebf" kindref="member">gr::lora::controller::sptr</ref></type>
+        <definition>gr::lora::controller::sptr gr::lora::channelizer_impl::d_controller</definition>
+        <argsstring></argsstring>
+        <name>d_controller</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/channelizer_impl.h" line="40" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/channelizer_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1lora_1_1channelizer__impl_1ad2cd7aea32323147c924dc56f3b18fbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::channelizer_impl::channelizer_impl</definition>
+        <argsstring>(float in_samp_rate, float out_samp_rate, float center_freq, std::vector&lt; float &gt; channel_list)</argsstring>
+        <name>channelizer_impl</name>
+        <param>
+          <type>float</type>
+          <declname>in_samp_rate</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>out_samp_rate</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>center_freq</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; float &gt;</type>
+          <declname>channel_list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/channelizer_impl.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1channelizer__impl_1ab599bf086bad43e03d0da3315542cf14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::channelizer_impl::~channelizer_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~channelizer_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/channelizer_impl.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1channelizer__impl_1ab4a564e5221f5a3054ff14d7b0642ada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::channelizer_impl::apply_cfo</definition>
+        <argsstring>(float cfo)</argsstring>
+        <name>apply_cfo</name>
+        <param>
+          <type>float</type>
+          <declname>cfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/channelizer_impl.h" line="45" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>gr::lora::channelizer_impl</label>
+        <link refid="classgr_1_1lora_1_1channelizer__impl"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gr::hier_block2</label>
+      </node>
+      <node id="6">
+        <label>gr::lora::channelizer</label>
+        <link refid="classgr_1_1lora_1_1channelizer"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>gr::lora::channelizer_impl</label>
+        <link refid="classgr_1_1lora_1_1channelizer__impl"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gr::hier_block2</label>
+      </node>
+      <node id="9">
+        <label>gr::lora::channelizer</label>
+        <link refid="classgr_1_1lora_1_1channelizer"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/channelizer_impl.h" line="33" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/channelizer_impl.h" bodystart="33" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora_1_1channelizer__impl_1ab4a564e5221f5a3054ff14d7b0642ada" prot="public" virt="non-virtual"><scope>gr::lora::channelizer_impl</scope><name>apply_cfo</name></member>
+      <member refid="classgr_1_1lora_1_1channelizer__impl_1ad2cd7aea32323147c924dc56f3b18fbc" prot="public" virt="non-virtual"><scope>gr::lora::channelizer_impl</scope><name>channelizer_impl</name></member>
+      <member refid="classgr_1_1lora_1_1channelizer__impl_1a9e51a505f436a743a4ea6a77b7c27a1a" prot="private" virt="non-virtual"><scope>gr::lora::channelizer_impl</scope><name>d_cfo</name></member>
+      <member refid="classgr_1_1lora_1_1channelizer__impl_1a62c5ed4ccc4e0ccd257a766b99c7f655" prot="private" virt="non-virtual"><scope>gr::lora::channelizer_impl</scope><name>d_controller</name></member>
+      <member refid="classgr_1_1lora_1_1channelizer__impl_1addfa05714e692259fe95b1852fd3c18a" prot="private" virt="non-virtual"><scope>gr::lora::channelizer_impl</scope><name>d_freq_offset</name></member>
+      <member refid="classgr_1_1lora_1_1channelizer__impl_1ad1153f6c5199fc53b1129aa1ef609927" prot="private" virt="non-virtual"><scope>gr::lora::channelizer_impl</scope><name>d_lpf</name></member>
+      <member refid="classgr_1_1lora_1_1channelizer__impl_1a42c97422d818bce7bf7c4a5a22c217f2" prot="private" virt="non-virtual"><scope>gr::lora::channelizer_impl</scope><name>d_resampler</name></member>
+      <member refid="classgr_1_1lora_1_1channelizer__impl_1a271c8fd0bcb58135c4e9cf7002b12553" prot="private" virt="non-virtual"><scope>gr::lora::channelizer_impl</scope><name>d_xlating_fir_filter</name></member>
+      <member refid="classgr_1_1lora_1_1channelizer_1a2bc8e8f4a51f63fee8b11d4f067d0809" prot="public" virt="non-virtual"><scope>gr::lora::channelizer_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1lora_1_1channelizer_1a1321d3f93480e18bdcbe0bba0c7294f6" prot="public" virt="non-virtual"><scope>gr::lora::channelizer_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1lora_1_1channelizer__impl_1ab599bf086bad43e03d0da3315542cf14" prot="public" virt="non-virtual"><scope>gr::lora::channelizer_impl</scope><name>~channelizer_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

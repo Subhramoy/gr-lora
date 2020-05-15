@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1lora_1_1message__socket__sink__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora::message_socket_sink_impl</compoundname>
+    <basecompoundref refid="classgr_1_1lora_1_1message__socket__sink" prot="public" virt="non-virtual">gr::lora::message_socket_sink</basecompoundref>
+    <includes refid="message__socket__sink__impl_8h" local="no">message_socket_sink_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1lora_1_1message__socket__sink__impl_1a890881a278eb56cb552b5eb0a8237464" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string gr::lora::message_socket_sink_impl::d_ip</definition>
+        <argsstring></argsstring>
+        <name>d_ip</name>
+        <initializer>= &quot;127.0.0.1&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/message_socket_sink_impl.h" line="34" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/message_socket_sink_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1message__socket__sink__impl_1a042156d00f2b6bb7dcb2c26a0d9c44f0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lora::message_socket_sink_impl::d_port</definition>
+        <argsstring></argsstring>
+        <name>d_port</name>
+        <initializer>= 40868</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/message_socket_sink_impl.h" line="35" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/message_socket_sink_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1message__socket__sink__impl_1a6888c65b6088c6faca5fbfeb674d47a6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora::message_socket_sink_impl::d_loratap</definition>
+        <argsstring></argsstring>
+        <name>d_loratap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/message_socket_sink_impl.h" line="36" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/message_socket_sink_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1message__socket__sink__impl_1a2a286f468961f067f4cdd6276074672b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora::message_socket_sink_impl::d_loraphy</definition>
+        <argsstring></argsstring>
+        <name>d_loraphy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/message_socket_sink_impl.h" line="37" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/message_socket_sink_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1message__socket__sink__impl_1a84e3e00777998343e4663c77c93e3e3f" prot="private" static="no" mutable="no">
+        <type>struct sockaddr_in *</type>
+        <definition>struct sockaddr_in* gr::lora::message_socket_sink_impl::d_sock_addr</definition>
+        <argsstring></argsstring>
+        <name>d_sock_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/message_socket_sink_impl.h" line="40" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/message_socket_sink_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1message__socket__sink__impl_1a833efb73eb4f783f27f54a12b6e9392a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lora::message_socket_sink_impl::d_socket</definition>
+        <argsstring></argsstring>
+        <name>d_socket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/message_socket_sink_impl.h" line="41" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/message_socket_sink_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1lora_1_1message__socket__sink__impl_1a2f8ebb6ae7671af0e7bfd2c92e431310" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::message_socket_sink_impl::handle</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>handle</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/message_socket_sink_impl.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1message__socket__sink__impl_1adef8038231815776d2d76773ea9a050d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::message_socket_sink_impl::msg_send_udp</definition>
+        <argsstring>(const loraphy_header_t *loraphy_header, const uint8_t *payload, const uint32_t payload_length)</argsstring>
+        <name>msg_send_udp</name>
+        <param>
+          <type>const <ref refid="loraphy_8h_1a78c1041b95d475b3b028c3e6b68033c9" kindref="member">loraphy_header_t</ref> *</type>
+          <declname>loraphy_header</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>payload_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/message_socket_sink_impl.h" line="50" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1lora_1_1message__socket__sink__impl_1ab89b32a6709d3011c0bb5e8388e0164f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::message_socket_sink_impl::message_socket_sink_impl</definition>
+        <argsstring>(std::string ip, int port, bool loratap, bool loraphy)</argsstring>
+        <name>message_socket_sink_impl</name>
+        <param>
+          <type>std::string</type>
+          <declname>ip</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>loratap</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>loraphy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/message_socket_sink_impl.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1message__socket__sink__impl_1a49c5c25be3fbd56c60e0184385c4cbec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::message_socket_sink_impl::~message_socket_sink_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~message_socket_sink_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/message_socket_sink_impl.h" line="47" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="51">
+        <label>block</label>
+      </node>
+      <node id="50">
+        <label>gr::lora::message_socket_sink</label>
+        <link refid="classgr_1_1lora_1_1message__socket__sink"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>gr::lora::message_socket_sink_impl</label>
+        <link refid="classgr_1_1lora_1_1message__socket__sink__impl"/>
+        <childnode refid="50" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="54">
+        <label>block</label>
+      </node>
+      <node id="53">
+        <label>gr::lora::message_socket_sink</label>
+        <link refid="classgr_1_1lora_1_1message__socket__sink"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>gr::lora::message_socket_sink_impl</label>
+        <link refid="classgr_1_1lora_1_1message__socket__sink__impl"/>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/dell/Downloads/gr-lora-0.6.2/lib/message_socket_sink_impl.h" line="32" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/lib/message_socket_sink_impl.h" bodystart="32" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora_1_1message__socket__sink__impl_1a890881a278eb56cb552b5eb0a8237464" prot="private" virt="non-virtual"><scope>gr::lora::message_socket_sink_impl</scope><name>d_ip</name></member>
+      <member refid="classgr_1_1lora_1_1message__socket__sink__impl_1a2a286f468961f067f4cdd6276074672b" prot="private" virt="non-virtual"><scope>gr::lora::message_socket_sink_impl</scope><name>d_loraphy</name></member>
+      <member refid="classgr_1_1lora_1_1message__socket__sink__impl_1a6888c65b6088c6faca5fbfeb674d47a6" prot="private" virt="non-virtual"><scope>gr::lora::message_socket_sink_impl</scope><name>d_loratap</name></member>
+      <member refid="classgr_1_1lora_1_1message__socket__sink__impl_1a042156d00f2b6bb7dcb2c26a0d9c44f0" prot="private" virt="non-virtual"><scope>gr::lora::message_socket_sink_impl</scope><name>d_port</name></member>
+      <member refid="classgr_1_1lora_1_1message__socket__sink__impl_1a84e3e00777998343e4663c77c93e3e3f" prot="private" virt="non-virtual"><scope>gr::lora::message_socket_sink_impl</scope><name>d_sock_addr</name></member>
+      <member refid="classgr_1_1lora_1_1message__socket__sink__impl_1a833efb73eb4f783f27f54a12b6e9392a" prot="private" virt="non-virtual"><scope>gr::lora::message_socket_sink_impl</scope><name>d_socket</name></member>
+      <member refid="classgr_1_1lora_1_1message__socket__sink__impl_1a2f8ebb6ae7671af0e7bfd2c92e431310" prot="private" virt="non-virtual"><scope>gr::lora::message_socket_sink_impl</scope><name>handle</name></member>
+      <member refid="classgr_1_1lora_1_1message__socket__sink_1af8486ec2d39b45d5047b8e1c7bc206f8" prot="public" virt="non-virtual"><scope>gr::lora::message_socket_sink_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1lora_1_1message__socket__sink__impl_1ab89b32a6709d3011c0bb5e8388e0164f" prot="public" virt="non-virtual"><scope>gr::lora::message_socket_sink_impl</scope><name>message_socket_sink_impl</name></member>
+      <member refid="classgr_1_1lora_1_1message__socket__sink__impl_1adef8038231815776d2d76773ea9a050d" prot="private" virt="non-virtual"><scope>gr::lora::message_socket_sink_impl</scope><name>msg_send_udp</name></member>
+      <member refid="classgr_1_1lora_1_1message__socket__sink_1aebe24db3131c4f75eab532761448e3ad" prot="public" virt="non-virtual"><scope>gr::lora::message_socket_sink_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1lora_1_1message__socket__sink__impl_1a49c5c25be3fbd56c60e0184385c4cbec" prot="public" virt="non-virtual"><scope>gr::lora::message_socket_sink_impl</scope><name>~message_socket_sink_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

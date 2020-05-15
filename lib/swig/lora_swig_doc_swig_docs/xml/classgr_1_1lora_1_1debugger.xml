@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1lora_1_1debugger" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora::debugger</compoundname>
+    <includes refid="debugger_8h" local="no">debugger.h</includes>
+    <innerclass refid="structgr_1_1lora_1_1debugger_1_1header" prot="private">gr::lora::debugger::header</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1lora_1_1debugger_1a704465e971d541d6773fc4e0b5fcc07a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora::debugger::d_samples</definition>
+        <argsstring></argsstring>
+        <name>d_samples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" line="48" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1debugger_1a4b8ac8f1a2d3769970a877fe8a518572" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lora::debugger::d_socket</definition>
+        <argsstring></argsstring>
+        <name>d_socket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" line="49" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1debugger_1a75cb3e514bb32a363f85c03e51155105" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora::debugger::d_attached</definition>
+        <argsstring></argsstring>
+        <name>d_attached</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" line="50" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1lora_1_1debugger_1a96192784e0ea57c45c5daec7121b73e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::debugger::debugger</definition>
+        <argsstring>()</argsstring>
+        <name>debugger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1debugger_1a597a39cd61bed971108d3faad438c13f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual gr::lora::debugger::~debugger</definition>
+        <argsstring>()</argsstring>
+        <name>~debugger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1debugger_1a274eec72bbcef385fcfb009fec35cda4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::debugger::attach</definition>
+        <argsstring>(std::string path=&quot;/tmp/gr_lora.sock&quot;)</argsstring>
+        <name>attach</name>
+        <param>
+          <type>std::string</type>
+          <declname>path</declname>
+          <defval>&quot;/tmp/gr_lora.sock&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1debugger_1acdd93e466a1a725f345a991369e4ec9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::debugger::detach</definition>
+        <argsstring>(void)</argsstring>
+        <name>detach</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1debugger_1ab0a8960663f9266183d7083eead29713" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::debugger::analyze_samples</definition>
+        <argsstring>(bool clear, bool draw_over)</argsstring>
+        <name>analyze_samples</name>
+        <param>
+          <type>bool</type>
+          <declname>clear</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>draw_over</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1debugger_1a8e58f17201365d235dd4e28f64fe6be0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::debugger::store_samples</definition>
+        <argsstring>(const gr_complex *samples, uint32_t length)</argsstring>
+        <name>store_samples</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>samples</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" line="40" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1lora_1_1debugger_1a150b1eb538633f3a563b2e096439ef12" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct gr::lora::debugger::header</type>
+        <definition>struct gr::lora::debugger::header gr::lora::debugger::__attribute__</definition>
+        <argsstring>((packed, aligned(1))) header</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(packed, aligned(1))</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1debugger_1a96adcabbfa9cf326fbbd5909318f6ef5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::debugger::send_samples</definition>
+        <argsstring>()</argsstring>
+        <name>send_samples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" line="47" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" line="32" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" bodystart="32" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora_1_1debugger_1a150b1eb538633f3a563b2e096439ef12" prot="private" virt="non-virtual"><scope>gr::lora::debugger</scope><name>__attribute__</name></member>
+      <member refid="classgr_1_1lora_1_1debugger_1ab0a8960663f9266183d7083eead29713" prot="public" virt="non-virtual"><scope>gr::lora::debugger</scope><name>analyze_samples</name></member>
+      <member refid="classgr_1_1lora_1_1debugger_1a274eec72bbcef385fcfb009fec35cda4" prot="public" virt="non-virtual"><scope>gr::lora::debugger</scope><name>attach</name></member>
+      <member refid="classgr_1_1lora_1_1debugger_1a75cb3e514bb32a363f85c03e51155105" prot="private" virt="non-virtual"><scope>gr::lora::debugger</scope><name>d_attached</name></member>
+      <member refid="classgr_1_1lora_1_1debugger_1a704465e971d541d6773fc4e0b5fcc07a" prot="private" virt="non-virtual"><scope>gr::lora::debugger</scope><name>d_samples</name></member>
+      <member refid="classgr_1_1lora_1_1debugger_1a4b8ac8f1a2d3769970a877fe8a518572" prot="private" virt="non-virtual"><scope>gr::lora::debugger</scope><name>d_socket</name></member>
+      <member refid="classgr_1_1lora_1_1debugger_1a96192784e0ea57c45c5daec7121b73e1" prot="public" virt="non-virtual"><scope>gr::lora::debugger</scope><name>debugger</name></member>
+      <member refid="classgr_1_1lora_1_1debugger_1acdd93e466a1a725f345a991369e4ec9f" prot="public" virt="non-virtual"><scope>gr::lora::debugger</scope><name>detach</name></member>
+      <member refid="classgr_1_1lora_1_1debugger_1a96adcabbfa9cf326fbbd5909318f6ef5" prot="private" virt="non-virtual"><scope>gr::lora::debugger</scope><name>send_samples</name></member>
+      <member refid="classgr_1_1lora_1_1debugger_1a8e58f17201365d235dd4e28f64fe6be0" prot="public" virt="non-virtual"><scope>gr::lora::debugger</scope><name>store_samples</name></member>
+      <member refid="classgr_1_1lora_1_1debugger_1a597a39cd61bed971108d3faad438c13f" prot="public" virt="virtual"><scope>gr::lora::debugger</scope><name>~debugger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

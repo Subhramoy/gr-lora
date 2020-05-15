@@ -27,7 +27,7 @@ while i < 999:
 	#print binary_byte_read
 	#print c
 
-	sbet_file = open('sop_data-01')
+	sbet_file = open('/home/dell/Downloads/gr-loa-0.6.2/lib/header/data-09-02')
 	sbet_data = sbet_file.read()
 	#print 'Binary data'
 	#print sbet_data

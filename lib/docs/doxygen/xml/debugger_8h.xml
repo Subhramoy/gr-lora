@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="debugger_8h" kind="file" language="C++">
+    <compoundname>debugger.h</compoundname>
+    <includes local="no">gnuradio/gr_complex.h</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="decoder__impl_8h" local="no">decoder_impl.h</includedby>
+    <incdepgraph>
+      <node id="46">
+        <label>stdint.h</label>
+      </node>
+      <node id="45">
+        <label>vector</label>
+      </node>
+      <node id="44">
+        <label>gnuradio/gr_complex.h</label>
+      </node>
+      <node id="43">
+        <label>debugger.h</label>
+        <link refid="debugger_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="48">
+        <label>decoder_impl.h</label>
+        <link refid="decoder__impl_8h"/>
+      </node>
+      <node id="47">
+        <label>debugger.h</label>
+        <link refid="debugger_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1lora">gr::lora</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="debugger_8h_1a36d525cf4d116b2fe4ecc00222b256f1" prot="public" static="no">
+        <name>PACKED</name>
+        <initializer><ref refid="loratap_8h_1a81d9eaa662fd1187d2e06d375290d79a" kindref="member">__attribute__</ref>((packed, aligned(1)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" line="28" column="9" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/debugger.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classgr_1_1lora_1_1channelizer" kind="class"><name>gr::lora::channelizer</name>
+    <member refid="classgr_1_1lora_1_1channelizer_1a1321d3f93480e18bdcbe0bba0c7294f6" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora_1_1channelizer_1a2bc8e8f4a51f63fee8b11d4f067d0809" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora_1_1controller" kind="class"><name>gr::lora::controller</name>
+    <member refid="classgr_1_1lora_1_1controller_1a37376885dfff3a235597a0dd3845cebf" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora_1_1controller_1aecea72ae9ec13bfa38331d4890a21d3b" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora_1_1debugger" kind="class"><name>gr::lora::debugger</name>
+    <member refid="classgr_1_1lora_1_1debugger_1a704465e971d541d6773fc4e0b5fcc07a" kind="variable"><name>d_samples</name></member>
+    <member refid="classgr_1_1lora_1_1debugger_1a4b8ac8f1a2d3769970a877fe8a518572" kind="variable"><name>d_socket</name></member>
+    <member refid="classgr_1_1lora_1_1debugger_1a75cb3e514bb32a363f85c03e51155105" kind="variable"><name>d_attached</name></member>
+    <member refid="classgr_1_1lora_1_1debugger_1a96192784e0ea57c45c5daec7121b73e1" kind="function"><name>debugger</name></member>
+    <member refid="classgr_1_1lora_1_1debugger_1a597a39cd61bed971108d3faad438c13f" kind="function"><name>~debugger</name></member>
+    <member refid="classgr_1_1lora_1_1debugger_1a274eec72bbcef385fcfb009fec35cda4" kind="function"><name>attach</name></member>
+    <member refid="classgr_1_1lora_1_1debugger_1acdd93e466a1a725f345a991369e4ec9f" kind="function"><name>detach</name></member>
+    <member refid="classgr_1_1lora_1_1debugger_1ab0a8960663f9266183d7083eead29713" kind="function"><name>analyze_samples</name></member>
+    <member refid="classgr_1_1lora_1_1debugger_1a8e58f17201365d235dd4e28f64fe6be0" kind="function"><name>store_samples</name></member>
+    <member refid="classgr_1_1lora_1_1debugger_1a150b1eb538633f3a563b2e096439ef12" kind="function"><name>__attribute__</name></member>
+    <member refid="classgr_1_1lora_1_1debugger_1a96adcabbfa9cf326fbbd5909318f6ef5" kind="function"><name>send_samples</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora_1_1decoder" kind="class"><name>gr::lora::decoder</name>
+    <member refid="classgr_1_1lora_1_1decoder_1aa8f498f2dcf944b69e494c2a464d2332" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora_1_1decoder_1a9d76e49d4ea7210b8ec353568f55f454" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1lora_1_1decoder_1a55d191df2ce21e9a70865a8129d65b11" kind="function"><name>set_sf</name></member>
+    <member refid="classgr_1_1lora_1_1decoder_1a6b52ad51d068e9fbae798446412c740f" kind="function"><name>set_samp_rate</name></member>
+    <member refid="classgr_1_1lora_1_1decoder_1a24fdaa29313691717ac63146e32e09d7" kind="function"><name>set_abs_threshold</name></member>
+  </compound>
+  <compound refid="structgr_1_1lora_1_1debugger_1_1header" kind="struct"><name>gr::lora::debugger::header</name>
+    <member refid="structgr_1_1lora_1_1debugger_1_1header_1ad0008a97c98cd2ec5416dfd7ed64e1f7" kind="variable"><name>length</name></member>
+    <member refid="structgr_1_1lora_1_1debugger_1_1header_1a0ac66af6fcbc868b5083d1f337716515" kind="variable"><name>draw_over</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora_1_1message__file__sink" kind="class"><name>gr::lora::message_file_sink</name>
+    <member refid="classgr_1_1lora_1_1message__file__sink_1a59df75b40bf29e86b69d81e5c51d3e8e" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora_1_1message__file__sink_1a08f5f58684c9a9854b88400c8303ded2" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora_1_1message__socket__sink" kind="class"><name>gr::lora::message_socket_sink</name>
+    <member refid="classgr_1_1lora_1_1message__socket__sink_1aebe24db3131c4f75eab532761448e3ad" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora_1_1message__socket__sink_1af8486ec2d39b45d5047b8e1c7bc206f8" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1lora" kind="namespace"><name>gr::lora</name>
+    <member refid="namespacegr_1_1lora_1a26baf98a1baa5d33e2a19b91dccd03ba" kind="variable"><name>__attribute__</name></member>
+    <member refid="namespacegr_1_1lora_1a3ec19f44cfe474624ff51ec4b21dd7bb" kind="function"><name>clamp</name></member>
+    <member refid="namespacegr_1_1lora_1a8d40a6e5fef5f957e12f36f8c7f53933" kind="function"><name>rotl</name></member>
+    <member refid="namespacegr_1_1lora_1a8394d9318fae9794c5feaa003e844fba" kind="function"><name>to_bin</name></member>
+    <member refid="namespacegr_1_1lora_1aaee009cd0186f95dbd828505d3f2da4c" kind="function"><name>print_vector_bin</name></member>
+    <member refid="namespacegr_1_1lora_1a2df36aa40cbae2bda8d52000e1f88e0f" kind="function"><name>check_parity_string</name></member>
+    <member refid="namespacegr_1_1lora_1a456cfd7aaf3b6a2a8ed73ac715d9c672" kind="function"><name>check_parity</name></member>
+    <member refid="namespacegr_1_1lora_1afd863163bd588e5b3a702b7ee94ecd9f" kind="function"><name>select_bits</name></member>
+    <member refid="namespacegr_1_1lora_1aec8c226830a1526438974a473dfae41c" kind="function"><name>bit</name></member>
+    <member refid="namespacegr_1_1lora_1a5b528e5ef7bb8eeb9deeba7432948dfb" kind="function"><name>pack_byte</name></member>
+    <member refid="namespacegr_1_1lora_1ac3baa0e1f32ba7b3495bf7374babec00" kind="function"><name>pack_nibble</name></member>
+    <member refid="namespacegr_1_1lora_1a844d0a5dec3a3a6c4f8f1ad5aeb77b02" kind="function"><name>hamming_encode_soft</name></member>
+    <member refid="namespacegr_1_1lora_1a14a9a87aa9991f59928e1a13aab0b865" kind="function"><name>hamming_decode_soft_byte</name></member>
+    <member refid="namespacegr_1_1lora_1a6f79a8f75e8558107949865cd5876554" kind="function"><name>print_vector</name></member>
+    <member refid="namespacegr_1_1lora_1a3b1e2c9d8f812e6325a48ac40dd94251" kind="function"><name>print_vector_hex</name></member>
+    <member refid="namespacegr_1_1lora_1a708fea88edf623d6f633671ff1291507" kind="function"><name>print_interleave_matrix</name></member>
+    <member refid="namespacegr_1_1lora_1a35a06e5e01bdb1259f6858bf9bcf6027" kind="function"><name>dissect_packet</name></member>
+    <member refid="namespacegr_1_1lora_1a08ae79fa20feac714bb1b45ada9fd263" kind="function"><name>build_packet</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1afdc461b2e58d75adc8fe72bef899df32" kind="define"><name>LORA_API</name></member>
+  </compound>
+  <compound refid="channelizer_8h" kind="file"><name>channelizer.h</name>
+  </compound>
+  <compound refid="controller_8h" kind="file"><name>controller.h</name>
+  </compound>
+  <compound refid="debugger_8h" kind="file"><name>debugger.h</name>
+    <member refid="debugger_8h_1a36d525cf4d116b2fe4ecc00222b256f1" kind="define"><name>PACKED</name></member>
+    <member refid="debugger_8h_1aebb70c2aab3407a9f05334c47131a43b" kind="variable"><name>length</name></member>
+    <member refid="debugger_8h_1a4977782b93c51cfbef082ce8ba18a336" kind="variable"><name>draw_over</name></member>
+  </compound>
+  <compound refid="decoder_8h" kind="file"><name>decoder.h</name>
+  </compound>
+  <compound refid="loraphy_8h" kind="file"><name>loraphy.h</name>
+    <member refid="loraphy_8h_1a2481efd7de867935fe8fb3fde500c4a2" kind="enum"><name>cr</name></member>
+    <member refid="loraphy_8h_1a2481efd7de867935fe8fb3fde500c4a2aaa5e3d661a4342f711ccc102f6e15472" kind="enumvalue"><name>CR1</name></member>
+    <member refid="loraphy_8h_1a2481efd7de867935fe8fb3fde500c4a2a265e7935771fd8ba6e8bd452581483c1" kind="enumvalue"><name>CR2</name></member>
+    <member refid="loraphy_8h_1a2481efd7de867935fe8fb3fde500c4a2ad64302d69d6494f64a2e77bd7f0e4fd0" kind="enumvalue"><name>CR3</name></member>
+    <member refid="loraphy_8h_1a2481efd7de867935fe8fb3fde500c4a2a3b03216dd17582992d19fe718f812107" kind="enumvalue"><name>CR4</name></member>
+    <member refid="loraphy_8h_1a3c21d147762a5901dcd181e3d0848b29" kind="typedef"><name>cr_t</name></member>
+    <member refid="loraphy_8h_1a78c1041b95d475b3b028c3e6b68033c9" kind="variable"><name>loraphy_header_t</name></member>
+    <member refid="loraphy_8h_1aa815b3f8937062c6d5a50438f2dc9fc1" kind="function"><name>__attribute__</name></member>
+  </compound>
+  <compound refid="loratap_8h" kind="file"><name>loratap.h</name>
+    <member refid="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7e" kind="enum"><name>sf</name></member>
+    <member refid="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7eace0573e0f4530c3749e6dbd1f465c0dc" kind="enumvalue"><name>SF7</name></member>
+    <member refid="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7eacd9636e6b0a580e09fd1f40503719f7b" kind="enumvalue"><name>SF8</name></member>
+    <member refid="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7ead942ff07779feb519de652c0b6684414" kind="enumvalue"><name>SF9</name></member>
+    <member refid="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7ea5d3fa41ffec0e56aeedd1cbdae5edc6f" kind="enumvalue"><name>SF10</name></member>
+    <member refid="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7ea632f797fa2870d292d02289550188b03" kind="enumvalue"><name>SF11</name></member>
+    <member refid="loratap_8h_1ad713e38281718ed2d493fdcfa44dac7ea39aa6139e9e6aa23104f56225d667c85" kind="enumvalue"><name>SF12</name></member>
+    <member refid="loratap_8h_1aa26bfabeea57a4434055dacf00e1f6d3" kind="typedef"><name>sf_t</name></member>
+    <member refid="loratap_8h_1a4e37d760364f97d552fea4a113579bad" kind="variable"><name>loratap_channel_t</name></member>
+    <member refid="loratap_8h_1afeb7d0d3b73356fe151f5c7cfce07665" kind="variable"><name>loratap_rssi_t</name></member>
+    <member refid="loratap_8h_1af97d5ce50e66d6763f82234725f63d5a" kind="variable"><name>loratap_header_t</name></member>
+    <member refid="loratap_8h_1a81d9eaa662fd1187d2e06d375290d79a" kind="function"><name>__attribute__</name></member>
+  </compound>
+  <compound refid="message__file__sink_8h" kind="file"><name>message_file_sink.h</name>
+  </compound>
+  <compound refid="message__socket__sink_8h" kind="file"><name>message_socket_sink.h</name>
+  </compound>
+  <compound refid="utilities_8h" kind="file"><name>utilities.h</name>
+    <member refid="utilities_8h_1aa455c886ba3ac87bd04d84c303b39a2d" kind="define"><name>REV_BITS</name></member>
+    <member refid="utilities_8h_1ace7e1c624c907a0f2759ca432aa3faf6" kind="define"><name>MAC_CRC_SIZE</name></member>
+    <member refid="utilities_8h_1a9f323e90024dd5d8f0e1fbbf9c92a3a1" kind="define"><name>SM</name></member>
+    <member refid="utilities_8h_1a54868972748d21b68040887495282367" kind="define"><name>MS</name></member>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/dell/Downloads/gr-lora-0.6.2/include</name>
+  </compound>
+  <compound refid="dir_7a7217d5b8ec1be4285377747bc029ba" kind="dir"><name>/home/dell/Downloads/gr-lora-0.6.2/include/lora</name>
+  </compound>
+</doxygenindex>

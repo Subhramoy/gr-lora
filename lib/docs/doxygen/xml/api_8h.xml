@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="api_8h" kind="file" language="C++">
+    <compoundname>api.h</compoundname>
+    <includes local="no">gnuradio/attributes.h</includes>
+    <includedby refid="channelizer_8h" local="no">channelizer.h</includedby>
+    <includedby refid="controller_8h" local="no">controller.h</includedby>
+    <includedby refid="decoder_8h" local="no">decoder.h</includedby>
+    <includedby refid="message__file__sink_8h" local="no">message_file_sink.h</includedby>
+    <includedby refid="message__socket__sink_8h" local="no">message_socket_sink.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="0">
+        <label>api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6">
+        <label>controller_impl.h</label>
+        <link refid="controller__impl_8h"/>
+      </node>
+      <node id="3">
+        <label>channelizer.h</label>
+        <link refid="channelizer_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>channelizer_impl.h</label>
+        <link refid="channelizer__impl_8h"/>
+      </node>
+      <node id="10">
+        <label>message_file_sink_impl.h</label>
+        <link refid="message__file__sink__impl_8h"/>
+      </node>
+      <node id="8">
+        <label>decoder_impl.h</label>
+        <link refid="decoder__impl_8h"/>
+      </node>
+      <node id="2">
+        <label>api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>message_socket_sink.h</label>
+        <link refid="message__socket__sink_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>message_socket_sink_impl.h</label>
+        <link refid="message__socket__sink__impl_8h"/>
+      </node>
+      <node id="7">
+        <label>decoder.h</label>
+        <link refid="decoder_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>message_file_sink.h</label>
+        <link refid="message__file__sink_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>controller.h</label>
+        <link refid="controller_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="api_8h_1afdc461b2e58d75adc8fe72bef899df32" prot="public" static="no">
+        <name>LORA_API</name>
+        <initializer>__GR_ATTR_IMPORT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/api.h" line="30" column="12" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/api.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/api.h"/>
+  </compounddef>
+</doxygen>

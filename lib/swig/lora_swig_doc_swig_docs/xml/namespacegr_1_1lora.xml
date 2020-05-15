@@ -1,0 +1,725 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegr_1_1lora" kind="namespace" language="C++">
+    <compoundname>gr::lora</compoundname>
+    <innerclass refid="classgr_1_1lora_1_1channelizer" prot="public">gr::lora::channelizer</innerclass>
+    <innerclass refid="classgr_1_1lora_1_1controller" prot="public">gr::lora::controller</innerclass>
+    <innerclass refid="classgr_1_1lora_1_1debugger" prot="public">gr::lora::debugger</innerclass>
+    <innerclass refid="classgr_1_1lora_1_1decoder" prot="public">gr::lora::decoder</innerclass>
+    <innerclass refid="classgr_1_1lora_1_1message__file__sink" prot="public">gr::lora::message_file_sink</innerclass>
+    <innerclass refid="classgr_1_1lora_1_1message__socket__sink" prot="public">gr::lora::message_socket_sink</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacegr_1_1lora_1a26baf98a1baa5d33e2a19b91dccd03ba" prot="public" static="no" mutable="no">
+        <type><ref refid="classgr_1_1lora_1_1decoder" kindref="compound">gr::lora::decoder</ref></type>
+        <definition> gr::lora::decoder   gr::lora::__attribute__</definition>
+        <argsstring></argsstring>
+        <name>__attribute__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/decoder.h" line="710" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegr_1_1lora_1a3ec19f44cfe474624ff51ec4b21dd7bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T gr::lora::clamp</definition>
+        <argsstring>(const T d, const T min, const T max)</argsstring>
+        <name>clamp</name>
+        <param>
+          <type>const T</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Clamp given value in the given range. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of variable to clamp. <linebreak/>
+<computeroutput>d</computeroutput>, <computeroutput>min</computeroutput> and <computeroutput>max</computeroutput> must be of this type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to clamp. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The lower bound of the range. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The upper bound of the range. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" line="50" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora_1a8d40a6e5fef5f957e12f36f8c7f53933" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora::rotl</definition>
+        <argsstring>(uint32_t bits, uint32_t count=1u, const uint32_t size=8u)</argsstring>
+        <name>rotl</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>bits</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>count</declname>
+          <defval>1u</defval>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>size</declname>
+          <defval>8u</defval>
+        </param>
+        <briefdescription>
+<para>Rotate the given bits to the left and return the result. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to rotate. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of bits to rotate (shift to left and add to right). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size in bits used in <computeroutput>bits</computeroutput>. <linebreak/>
+e.g. 1 byte given =&gt; size = 8 <linebreak/>
+e.g. only 6 bits in use =&gt; size = 6, and all bits higher than (1 &lt;&lt; size-1) will be zeroed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" line="67" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" bodystart="67" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora_1a8394d9318fae9794c5feaa003e844fba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string gr::lora::to_bin</definition>
+        <argsstring>(const T v, const uint32_t bitwidth)</argsstring>
+        <name>to_bin</name>
+        <param>
+          <type>const T</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>bitwidth</declname>
+        </param>
+        <briefdescription>
+<para>Return the <computeroutput>v</computeroutput> represented in a binary string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of variable to convert. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to convert. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitwidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length in bits of the given variable <computeroutput>v</computeroutput>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" line="87" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" bodystart="87" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora_1aaee009cd0186f95dbd828505d3f2da4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gr::lora::print_vector_bin</definition>
+        <argsstring>(std::ostream &amp;out, const std::vector&lt; T &gt; &amp;v, const std::string &amp;prefix, const int element_len_bits)</argsstring>
+        <name>print_vector_bin</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>prefix</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>element_len_bits</declname>
+        </param>
+        <briefdescription>
+<para>Append the data in a given vector to an output stream with a comma delimiter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of variable to append. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output stream to append to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector containing the data to append. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A prefix to include before appending the data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>element_len_bits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length in bits of the data in <computeroutput>v</computeroutput>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" line="125" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" bodystart="125" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora_1a2df36aa40cbae2bda8d52000e1f88e0f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::lora::check_parity_string</definition>
+        <argsstring>(const std::string &amp;word, const bool even=true)</argsstring>
+        <name>check_parity_string</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>word</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>even</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Check whether the parity of the given binary string is even. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>word</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string to check. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>even</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Check for even (<computeroutput>true</computeroutput>) or uneven (<computeroutput>false</computeroutput>) parity. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" line="142" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" bodystart="142" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora_1a456cfd7aaf3b6a2a8ed73ac715d9c672" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::lora::check_parity</definition>
+        <argsstring>(uint64_t word, const bool even=true)</argsstring>
+        <name>check_parity</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>word</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>even</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Check whether the parity of the given uint64_t is even. <linebreak/>
+See <ulink url="https://graphics.stanford.edu/~seander/bithacks.html">https://graphics.stanford.edu/~seander/bithacks.html</ulink> for more. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>word</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The uint64_t to check. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>even</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Check for even (<computeroutput>true</computeroutput>) or uneven (<computeroutput>false</computeroutput>) parity. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" line="162" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" bodystart="162" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora_1afd863163bd588e5b3a702b7ee94ecd9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora::select_bits</definition>
+        <argsstring>(const uint32_t data, const uint8_t *indices, const uint8_t n)</argsstring>
+        <name>select_bits</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Select the bits in data given by the indices in <computeroutput>*indices</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data to select bits from. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>*indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array with the indices to select. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of indices. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" line="180" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" bodystart="180" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora_1aec8c226830a1526438974a473dfae41c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::lora::bit</definition>
+        <argsstring>(const uint8_t v, const uint8_t i)</argsstring>
+        <name>bit</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Select a single bit from the given byte. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The byte to select from. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index to select the bit from starting from the LSB. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" line="197" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" bodystart="197" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora_1a5b528e5ef7bb8eeb9deeba7432948dfb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::lora::pack_byte</definition>
+        <argsstring>(const uint8_t a, const uint8_t b, const uint8_t c, const uint8_t d, const uint8_t e, const uint8_t f, const uint8_t g, const uint8_t h)</argsstring>
+        <name>pack_byte</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+<para>Pack the given 8 bits in a byte with: <computeroutput>hgfe dcba</computeroutput> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a-h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bits to pack with the LSB first. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" line="207" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" bodystart="207" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora_1ac3baa0e1f32ba7b3495bf7374babec00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::lora::pack_nibble</definition>
+        <argsstring>(const uint8_t a, const uint8_t b, const uint8_t c, const uint8_t d)</argsstring>
+        <name>pack_nibble</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Pack the given 4 bits in a nibble with: <computeroutput>dcba</computeroutput> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a-d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bits to pack with the LSB first. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" line="218" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" bodystart="218" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora_1a844d0a5dec3a3a6c4f8f1ad5aeb77b02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::lora::hamming_encode_soft</definition>
+        <argsstring>(const uint8_t v)</argsstring>
+        <name>hamming_encode_soft</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Encode the given word with standard Hamming(7,4) and return a byte with the set parity bits. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The nibble to encode. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" line="228" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" bodystart="228" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora_1a14a9a87aa9991f59928e1a13aab0b865" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>static uint8_t gr::lora::hamming_decode_soft_byte</definition>
+        <argsstring>(uint8_t v)</argsstring>
+        <name>hamming_decode_soft_byte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Hamming(8,4) decoding by constructing a Syndrome matrix LUT for XORing on parity errors. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The byte to decode. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returs a nibble containing the corrected data. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" line="244" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" bodystart="244" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora_1a6f79a8f75e8558107949865cd5876554" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gr::lora::print_vector</definition>
+        <argsstring>(std::ostream &amp;out, const T *v, const std::string &amp;prefix, const int size, const int element_len_bits)</argsstring>
+        <name>print_vector</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>prefix</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>element_len_bits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" line="298" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" bodystart="298" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora_1a3b1e2c9d8f812e6325a48ac40dd94251" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gr::lora::print_vector_hex</definition>
+        <argsstring>(std::ostream &amp;out, const T *v, const uint32_t size, bool endline)</argsstring>
+        <name>print_vector_hex</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>endline</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" line="308" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" bodystart="308" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora_1a708fea88edf623d6f633671ff1291507" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gr::lora::print_interleave_matrix</definition>
+        <argsstring>(std::ostream &amp;out, const std::vector&lt; T &gt; &amp;v, const uint32_t sf)</argsstring>
+        <name>print_interleave_matrix</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>sf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" line="320" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" bodystart="320" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora_1a35a06e5e01bdb1259f6858bf9bcf6027" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora::dissect_packet</definition>
+        <argsstring>(const void **header, uint32_t header_size, const uint8_t *buffer, uint32_t offset)</argsstring>
+        <name>dissect_packet</name>
+        <param>
+          <type>const void **</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>header_size</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" line="341" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" bodystart="341" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora_1a08ae79fa20feac714bb1b45ada9fd263" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora::build_packet</definition>
+        <argsstring>(uint8_t *buffer, uint32_t offset, const void *header, uint32_t header_size)</argsstring>
+        <name>build_packet</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>header_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" line="346" column="1" bodyfile="/home/dell/Downloads/gr-lora-0.6.2/include/lora/utilities.h" bodystart="346" bodyend="351"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/dell/Downloads/gr-lora-0.6.2/include/lora/channelizer.h" line="29" column="1"/>
+  </compounddef>
+</doxygen>
