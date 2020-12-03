@@ -781,6 +781,8 @@ namespace gr {
                     float correlation = detect_preamble_autocorr(input, d_samples_per_symbol);
                     //std::cout<< "trying to detect preamble "<< std::endl; //comment by me
 
+                    std::cout << correlation << std::endl;
+
                     if (correlation >= 0.90f) {
                         std::cout << correlation << std::endl;
                         std::cout<< "corr >= 0.90f preamble detected. Lora Frame starts .. "<< std::endl; //comment by me
@@ -809,7 +811,7 @@ namespace gr {
                     //message_port_pub(pmt::mp("control"), kv);
                     //interdigital
                     samples_to_file("/home/dell/Downloads/gr-lora-0.6.2/lib/sop/data-09-2", &input[i-500], 1000, sizeof(gr_complex));//by me
-                    samples_to_file("/tmp/detect",  &input[i], d_samples_per_symbol, sizeof(gr_complex));
+                    samples_to_file("/tmp/detect",  &input[i], d_samples_per_symbol, sizeof(gr_complex)); //data not accurate as used for dummy test
 
                     consume_each(i);
                     std::cout<< "going to decoder state FIND SFD "<< std::endl; //comment by me
@@ -874,19 +876,24 @@ namespace gr {
                         std::cout << "Demod and decode of header success. Printing header " << std::endl; //comment by me
                         gr::lora::print_vector_hex(std::cout, &d_decoded[0], d_decoded.size(), false);
                         uint32_t len_tap = sizeof(loratap_header_t); //by me 
-           	 			uint32_t len_phy = sizeof(loraphy_header_t); //by me
-           	 			//samples_to_file("/home/dell/Downloads/gr-lora-0.6.2/lib/interdigital2b", &input[i-500], 1000, sizeof(gr_complex));//by me
-                        samples_to_file("/home/dell/Downloads/gr-lora-0.6.2/lib/header/data-09-2", &input[len_tap], len_phy, sizeof(gr_complex));//by me
+												uint32_t len_phy = sizeof(loraphy_header_t); //by me
+												//samples_to_file("/home/dell/Downloads/gr-lora-0.6.2/lib/interdigital2b", &input[i-500], 1000, sizeof(gr_complex));//by me
+												samples_to_file("/home/dell/Downloads/gr-lora-0.6.2/lib/header/data-09-2", &input[len_tap], len_phy, sizeof(gr_complex));//by me
                         std::cout << "Tap Header Length ="<< len_tap << std::endl;
                         std::cout << "Phy Header Length ="<< len_phy << std::endl;
                         std::cout << "Tap Header Length ="<< len_tap << std::endl;
+                        //step1 = &d_decoded; by me
+                        //int step2 = d_decoded; by me
+                        //std::cout << "d_decoded" << d_decoded[0] << std::endl; //by me 
+                        //std::cout << "step2" << step2 << std::endl; //by me
                         memcpy(&d_phdr, &d_decoded[0], sizeof(loraphy_header_t));
+                        std::cout << "d_phdr" << &d_phdr << std::endl; //by me 
                         d_decoded.clear();
 
                         d_payload_length = d_phdr.length + MAC_CRC_SIZE * d_phdr.has_mac_crc;
                         //std::cout << "corresponding payload length " << d_payload_length << std::endl; //comment by me
                         //d_phy_crc = SM(decoded[1], 4, 0xf0) | MS(decoded[2], 0xf0, 4);
-                        uint32_t len1 = sizeof(loratap_header_t) + sizeof(loraphy_header_t) + d_payload_length;
+                        uint32_t len1 = sizeof(loratap_header_t) + sizeof(loraphy_header_t); //+ d_payload_length;
                         std::cout << "Length of Lora packet: "<< len1 << std::endl; //comment by me
 
                         // Calculate number of payload symbols needed
@@ -896,6 +903,8 @@ namespace gr {
                         const float symbols_needed  = bits_needed * (symbols_per_block / 4.0f) / float(d_sf - redundancy);
                         const int blocks_needed     = (int)std::ceil(symbols_needed / symbols_per_block);
                         d_payload_symbols     = blocks_needed * symbols_per_block;
+                        int size_payload = sizeof(d_payload_length);
+                        //std::cout << "Size in Bytes of payload = " << size_payload << "bytes" << std::endl; //comment by me
                         std::cout << "  Payload length and payload symbols " << std::endl; //comment by me
                         std::cout << "LEN: " << d_payload_length << " (" << d_payload_symbols << " symbols)" << std::endl; //comment by me
                         #ifdef DEBUG
@@ -933,7 +942,11 @@ namespace gr {
                             uint32_t duration = len1 - 500; //by me
                             samples_to_file("/home/dell/Downloads/gr-lora-0.6.2/lib/eop/data-09-2", &input[len1-21], 1000, sizeof(gr_complex));//by me
                             gr::lora::print_vector_hex(std::cout, &d_decoded[0], d_payload_length, true);
+                            gr::lora::dev_address(std::cout, &d_decoded[0],true);//DevAddress
                             msg_lora_frame();
+                            std::cout << "d_payload_length:" << d_payload_length<< std::endl; //comment by me
+                            //gr::lora::print_vector_hex(std::cout << "Array of words deshuffled" << d_words_deshuffled[1]);//<< std::endl;
+                            //std::cout<< "DevAddress above"<< std::endl;
                             std::cout << "End of Lora Packet. going back to detecting preamble " << std::endl; //comment by me
                             //samples_to_file("/home/dell/Downloads/gr-lora-0.6.2/lib/interdigital3d", &input[0], 1000, sizeof(gr_complex));//by me doesn't quit terminal
                             d_state = gr::lora::DecoderState::DETECT;
