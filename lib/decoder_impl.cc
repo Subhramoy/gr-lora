@@ -942,7 +942,7 @@ namespace gr {
                             uint32_t duration = len1 - 500; //by me
                             samples_to_file("/home/dell/Downloads/gr-lora-0.6.2/lib/eop/data-09-2", &input[len1-21], 1000, sizeof(gr_complex));//by me
                             gr::lora::print_vector_hex(std::cout, &d_decoded[0], d_payload_length, true);
-                            gr::lora::dev_address(std::cout, &d_decoded[0],true);//DevAddress
+                            // gr::lora::dev_address(std::cout, &d_decoded[0],true);//DevAddress
                             msg_lora_frame();
                             std::cout << "d_payload_length:" << d_payload_length<< std::endl; //comment by me
                             //gr::lora::print_vector_hex(std::cout << "Array of words deshuffled" << d_words_deshuffled[1]);//<< std::endl;

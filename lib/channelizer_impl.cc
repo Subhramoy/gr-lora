@@ -40,7 +40,7 @@ namespace gr {
     channelizer_impl::channelizer_impl(float in_samp_rate, float out_samp_rate, float center_freq, std::vector<float> channel_list)
       : gr::hier_block2("channelizer",
               gr::io_signature::make(1, 1, sizeof(gr_complex)),
-              gr::io_signature::make(channel_list.size(), channel_list.size(), sizeof(gr_complex))),
+              gr::io_signature::make(channel_list.size() + 1, channel_list.size() + 1, sizeof(gr_complex))),
         d_cfo(0.0)
     {
         d_lpf = gr::filter::firdes::low_pass(1.0, out_samp_rate, 62500+15000, 10000, gr::filter::firdes::WIN_HAMMING, 6.67);
@@ -55,7 +55,8 @@ namespace gr {
 
         connect(self(), 0, d_resampler, 0);
         connect(d_resampler, 0, d_xlating_fir_filter, 0);
-        connect(d_xlating_fir_filter, 0, self(), 0);
+        connect(d_xlating_fir_filter, 0, self(), 0);  // first output is the output of the channelizer
+        connect(d_resampler, 0, self(), 1);  // second output is the output of resampler (intermediate stage)
 
         msg_connect(self(), pmt::intern("control"), d_controller, pmt::intern("control"));
     }

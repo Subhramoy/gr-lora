@@ -30,7 +30,7 @@ class lora_receiver(gr.hier_block2):
         gr.hier_block2.__init__(self,
             "lora_receiver",  # Min, Max, gr.sizeof_<type>
             gr.io_signature(1, 1, gr.sizeof_gr_complex),  # Input signature
-            gr.io_signature(0, 0, 0)) # Output signature
+            gr.io_signature(2, 2, gr.sizeof_gr_complex)) # Output signature
 
         # Parameters
         self.in_samp_rate  = in_samp_rate
@@ -52,6 +52,9 @@ class lora_receiver(gr.hier_block2):
         self.connect((self.channelizer, 0), (self.decoder, 0))
         self.msg_connect((self.decoder, 'frames'), (self, 'frames'))
         self.msg_connect((self.decoder, 'control'), (self.channelizer, 'control'))
+        
+        self.connect((self.channelizer, 0), (self, 0))  # output of the channelizer
+        self.connect((self.channelizer, 1), (self, 1))  # output of the resampler
 
     def get_sf(self):
         return self.sf

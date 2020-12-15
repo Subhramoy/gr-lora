@@ -22,7 +22,11 @@
        * vlen
        * optional (set to 1 for optional inputs) -->
   <source>
-    <name>out</name>
+    <name>out_chann</name>
+    <type>complex</type>
+  </source>
+  <source>
+    <name>out_resampler</name>
     <type>complex</type>
   </source>
 </block>
